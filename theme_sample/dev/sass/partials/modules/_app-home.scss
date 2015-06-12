@@ -1,0 +1,43 @@
+
+.home-promos {
+
+	.home-promo {
+
+		position: relative;
+
+		.caption {
+
+			@include centre(y);
+			text-align: center;
+		}
+
+		&.home-promo-1 {
+
+			.caption {
+
+				left: 15%;
+
+				h1 {
+
+		
+				}
+			}
+		}
+
+		&.home-promo-2 {
+
+			.caption {
+
+				right: 15%;
+			}
+		}
+
+		&.home-promo-3 {
+
+			.caption {
+	
+				right: 15%;
+			}
+		}
+	}
+}
