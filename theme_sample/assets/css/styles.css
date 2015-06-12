@@ -85,9 +85,9 @@ html {
 
 /* line 30, ../../dev/sass/partials/globals/_typography.scss */
 body, input, textarea, select, button, p, a {
-  font-size: 16px;
-  font-size: 1em;
-  line-height: 24px;
+  font-size: 15px;
+  font-size: 0.9375em;
+  line-height: 22.5px;
   color: #222222;
   font-family: "GibsonRegular", arial, sans-serif;
 }
@@ -130,22 +130,28 @@ h4, .h4, .delta {
   line-height: 33px;
 }
 
-/* line 68, ../../dev/sass/partials/globals/_typography.scss */
-h5, .h5, .epsilon,
-h6, .h6, .zeta {
-  font-size: 18px;
-  font-size: 1.125em;
-  line-height: 27px;
+/* line 67, ../../dev/sass/partials/globals/_typography.scss */
+h5, .h5, .epsilon {
+  font-size: 16px;
+  font-size: 1em;
+  line-height: 24px;
 }
 
-/* line 73, ../../dev/sass/partials/globals/_typography.scss */
+/* line 71, ../../dev/sass/partials/globals/_typography.scss */
+h6, .h6, .zeta {
+  font-size: 15px;
+  font-size: 0.9375em;
+  line-height: 22.5px;
+}
+
+/* line 76, ../../dev/sass/partials/globals/_typography.scss */
 .mega {
   font-size: 72px;
   font-size: 4.5em;
   line-height: 108px;
 }
 
-/* line 80, ../../dev/sass/partials/globals/_typography.scss */
+/* line 83, ../../dev/sass/partials/globals/_typography.scss */
 small,
 .tiny {
   font-size: 14px;
@@ -153,12 +159,12 @@ small,
   line-height: 21px;
 }
 
-/* line 86, ../../dev/sass/partials/globals/_typography.scss */
+/* line 89, ../../dev/sass/partials/globals/_typography.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 92, ../../dev/sass/partials/globals/_typography.scss */
+/* line 95, ../../dev/sass/partials/globals/_typography.scss */
 em {
   font-style: italic;
 }
@@ -186,7 +192,7 @@ body {
 /* line 38, ../../dev/sass/partials/globals/_core.scss */
 .wrapper {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1260px;
   *zoom: 1;
   margin: 0 auto;
 }
@@ -202,12 +208,17 @@ body {
 }
 
 /* line 56, ../../dev/sass/partials/globals/_core.scss */
+.header-push {
+  padding: 60px 0;
+}
+
+/* line 61, ../../dev/sass/partials/globals/_core.scss */
 #skip-to-content {
   position: absolute;
   top: 0;
   left: -99999999px;
 }
-/* line 62, ../../dev/sass/partials/globals/_core.scss */
+/* line 67, ../../dev/sass/partials/globals/_core.scss */
 #skip-to-content:focus {
   position: static;
 }
@@ -1436,13 +1447,15 @@ input[type="submit"]:hover {
 /* line 10, ../../dev/sass/partials/globals/_links.scss */
 a {
   text-decoration: none;
-  color: #17ad8a;
+  color: #222222;
+  border-bottom: 2px solid transparent;
 }
-/* line 19, ../../dev/sass/partials/globals/_links.scss */
+/* line 20, ../../dev/sass/partials/globals/_links.scss */
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 2px solid #b7f0e7;
 }
-/* line 25, ../../dev/sass/partials/globals/_links.scss */
+/* line 26, ../../dev/sass/partials/globals/_links.scss */
 a:active {
   text-decoration: underline;
 }
@@ -1558,7 +1571,11 @@ table th, table td {
   margin-left: 10px;
 }
 
-/* line 7, ../../dev/sass/partials/modules/_app-footer.scss */
+/* line 5, ../../dev/sass/partials/modules/_app-footer.scss */
+.global-footer {
+  padding: 20px 0;
+}
+/* line 9, ../../dev/sass/partials/modules/_app-footer.scss */
 .global-footer h4 {
   margin-bottom: 40px;
 }
@@ -1589,6 +1606,82 @@ table th, table td {
 /* line 37, ../../dev/sass/partials/modules/_app-home.scss */
 .home-promos .home-promo.home-promo-3 .caption {
   right: 15%;
+}
+
+/* line 5, ../../dev/sass/partials/modules/_app-collection.scss */
+#collection .collection-item {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+/* line 11, ../../dev/sass/partials/modules/_app-collection.scss */
+#collection .collection-item:nth-child(4n+5) {
+  clear: left;
+}
+/* line 16, ../../dev/sass/partials/modules/_app-collection.scss */
+#collection .collection-item img {
+  margin-bottom: 20px;
+}
+/* line 21, ../../dev/sass/partials/modules/_app-collection.scss */
+#collection .collection-item h2 {
+  text-align: center;
+}
+/* line 28, ../../dev/sass/partials/modules/_app-collection.scss */
+#collection .collection-item a:hover {
+  text-decoration: none;
+}
+/* line 34, ../../dev/sass/partials/modules/_app-collection.scss */
+#collection .collection-item .short-description {
+  display: block;
+  text-align: center;
+}
+/* line 40, ../../dev/sass/partials/modules/_app-collection.scss */
+#collection .collection-item .price {
+  text-align: center;
+}
+/* line 44, ../../dev/sass/partials/modules/_app-collection.scss */
+#collection .collection-item .price .price-left {
+  text-align: left;
+  padding-right: 6.66667px;
+}
+/* line 50, ../../dev/sass/partials/modules/_app-collection.scss */
+#collection .collection-item .price .price-right {
+  text-align: right;
+  padding-left: 6.66667px;
+}
+
+/* line 63, ../../dev/sass/partials/modules/_app-collection.scss */
+#collection-sidebar .collection-sidebar-list {
+  margin-bottom: 30px;
+}
+/* line 67, ../../dev/sass/partials/modules/_app-collection.scss */
+#collection-sidebar .collection-sidebar-list a {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-size: 0.8125em;
+  line-height: 19.5px;
+}
+
+/* line 8, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-thumbnails li {
+  display: block;
+  margin-bottom: 20px;
+}
+/* line 13, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-thumbnails li:last-child {
+  margin-bottom: 0;
+}
+/* line 25, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-details-header {
+  text-align: center;
+}
+/* line 29, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-details-header h1 {
+  font-family: "GibsonRegular", arial, sans-serif;
+  text-transform: none;
+  font-size: 38px;
+  font-size: 2.375em;
+  line-height: 57px;
 }
 
 /* line 6, ../../dev/sass/misc/_helpers.scss */

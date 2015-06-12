@@ -1,0 +1,74 @@
+
+
+#collection {
+
+	.collection-item {
+
+		position: relative;
+		padding: $baseline/2;
+		margin-bottom: $baseline*2;
+
+		&:nth-child(4n+5) {
+
+			clear: left;
+		}
+
+		img {
+
+			margin-bottom: $baseline;
+		}
+
+		h2 {
+
+			text-align: center;
+		}
+
+		a {
+
+			&:hover {
+
+				text-decoration: none;
+			}
+		}
+
+		.short-description {
+
+			display: block;
+			text-align: center;
+		}
+
+		.price {
+
+			text-align: center;
+
+			.price-left {
+
+				text-align: left;
+				padding-right: $baseline/3;
+			}
+
+			.price-right {
+
+				text-align: right;
+				padding-left: $baseline/3;
+			}
+		}
+	}
+}
+
+
+// Sidebar
+#collection-sidebar {
+
+	.collection-sidebar-list {
+
+		margin-bottom: $baseline*1.5;
+
+		a {
+
+			text-transform: uppercase;
+			@include font(13);
+		}
+	}
+}
+

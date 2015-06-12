@@ -4,13 +4,14 @@
 // ============================================================
 
 
-$linkColor: $col-green;
+$linkColor: $col-black;
 
 
 a {
 
 	text-decoration: none;
 	color: $linkColor;
+	border-bottom: 2px solid transparent;
 
 	&:link {}
 
@@ -18,16 +19,14 @@ a {
 
 	&:hover {
 
-		text-decoration: underline;
-
+		text-decoration: none;
+		border-bottom: 2px solid $col-lime;
 	}
 
 	&:active {
 
 		text-decoration: underline;
-
 	}
-
 }
 
 // ============================================================

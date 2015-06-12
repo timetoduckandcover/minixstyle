@@ -29,7 +29,7 @@ html {
 
 body, input, textarea, select, button, p, a {
 
-    @include font(16);
+    @include font(15);
     color: $col-black;
     font-family: $gibsonregular;
 }
@@ -64,10 +64,13 @@ h4, .h4, .delta {
     @include font(22);
 }
 
-h5, .h5, .epsilon, 
+h5, .h5, .epsilon {
+
+   @include font(16);
+}
 h6, .h6, .zeta {
 
-   @include font(18);
+    @include font(15);
 }
 
 .mega {

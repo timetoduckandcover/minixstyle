@@ -4,7 +4,7 @@
 // ============================================================
 
 $background: $col-white;
-$containerWidth: 1400px;
+$containerWidth: 1260px;
 $containerPadding: $baseline;
 $containerCentering: true;
 $includeBorderBox: true;
@@ -51,6 +51,11 @@ body {
 
 		padding: $containerPadding;
 	}
+}
+
+.header-push {
+
+	padding: $baseline*3 0;
 }
 
 #skip-to-content {
