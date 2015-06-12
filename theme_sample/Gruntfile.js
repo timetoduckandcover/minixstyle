@@ -22,7 +22,9 @@ module.exports = function(grunt) {
                 src: [
                     'dev/js/libs/jquery.js',
                     'dev/js/libs/modernizr.js',
-                    'dev/js/**/*.js'
+                    'dev/js/modules/functions-header.js',
+                    'dev/js/**/**/*.js',
+                    'dev/js/modules/functions-footer.js'
                 ],
                 dest: 'assets/js/main.js',
             }

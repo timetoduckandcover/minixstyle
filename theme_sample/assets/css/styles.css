@@ -151,7 +151,7 @@ h6, .h6, .zeta {
   line-height: 108px;
 }
 
-/* line 83, ../../dev/sass/partials/globals/_typography.scss */
+/* line 82, ../../dev/sass/partials/globals/_typography.scss */
 small,
 .tiny {
   font-size: 14px;
@@ -159,12 +159,12 @@ small,
   line-height: 21px;
 }
 
-/* line 89, ../../dev/sass/partials/globals/_typography.scss */
+/* line 87, ../../dev/sass/partials/globals/_typography.scss */
 strong {
-  font-weight: bold;
+  font-family: "GibsonSemiBold", arial, sans-serif;
 }
 
-/* line 95, ../../dev/sass/partials/globals/_typography.scss */
+/* line 92, ../../dev/sass/partials/globals/_typography.scss */
 em {
   font-style: italic;
 }
@@ -1457,7 +1457,7 @@ a:hover {
 }
 /* line 26, ../../dev/sass/partials/globals/_links.scss */
 a:active {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* line 6, ../../dev/sass/partials/globals/_lists.scss */
@@ -1671,17 +1671,151 @@ table th, table td {
 #product .product-thumbnails li:last-child {
   margin-bottom: 0;
 }
-/* line 25, ../../dev/sass/partials/modules/_app-product.scss */
+/* line 30, ../../dev/sass/partials/modules/_app-product.scss */
 #product .product-details .product-details-header {
   text-align: center;
 }
-/* line 29, ../../dev/sass/partials/modules/_app-product.scss */
+/* line 34, ../../dev/sass/partials/modules/_app-product.scss */
 #product .product-details .product-details-header h1 {
   font-family: "GibsonRegular", arial, sans-serif;
   text-transform: none;
   font-size: 38px;
   font-size: 2.375em;
   line-height: 57px;
+}
+/* line 41, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-details-header .price {
+  font-size: 28px;
+  font-size: 1.75em;
+  line-height: 42px;
+}
+/* line 45, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-details-header .price .price-left {
+  text-align: left;
+  padding-right: 20px;
+}
+/* line 51, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-details-header .price .price-right {
+  text-align: right;
+  padding-left: 20px;
+  font-family: "GibsonSemiBold", arial, sans-serif;
+}
+/* line 61, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-variants {
+  margin: 40px 0 20px 0;
+}
+/* line 65, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-variants ul {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#product .product-details .product-variants ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 69, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-variants ul li {
+  float: left;
+  width: 23.5%;
+  margin: 0 2% 2% 0;
+}
+/* line 75, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-variants ul li:nth-child(4n) {
+  margin-right: 0;
+}
+/* line 80, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-variants ul li:nth-child(4n+5) {
+  clear: left;
+}
+/* line 85, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-variants ul li a {
+  padding: 10px;
+  border: 1px solid #222222;
+  display: block;
+  text-align: center;
+  background: white;
+  color: #222222;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 95, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-variants ul li a.active {
+  border: 1px solid #b7f0e7;
+  background: #b7f0e7;
+}
+/* line 101, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-variants ul li a.sold-out {
+  background: #aaa9a9;
+}
+/* line 105, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-variants ul li a.sold-out:hover {
+  border: 1px solid #222222;
+  background: #aaa9a9;
+}
+/* line 112, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-variants ul li a:hover {
+  border: 1px solid #b7f0e7;
+  background: #b7f0e7;
+}
+/* line 125, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .add-to-cart input {
+  width: 100%;
+  font-family: "GibsonRegular", arial, sans-serif;
+  padding: 10px 20px;
+  font-size: 26px;
+  font-size: 1.625em;
+  line-height: 39px;
+}
+/* line 135, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .extra-message {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  font-size: 1.25em;
+  line-height: 30px;
+  margin: 10px 0 20px 0;
+  padding-bottom: 4px;
+}
+/* line 149, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-tabs ul li {
+  display: block;
+  border-left: 1px solid #222222;
+  border-right: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+}
+/* line 156, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-tabs ul li:first-child {
+  border-top: 1px solid #222222;
+}
+/* line 161, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-tabs ul li .product-tab-header {
+  display: block;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-size: 1.25em;
+  line-height: 30px;
+  padding: 10px 40px 10px 20px;
+  border: none;
+  position: relative;
+}
+/* line 170, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-tabs ul li .product-tab-header:hover {
+  border: none;
+}
+/* line 175, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-tabs ul li .product-tab-header:after {
+  content: '+';
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+/* line 184, ../../dev/sass/partials/modules/_app-product.scss */
+#product .product-details .product-tabs ul li .product-tab-content {
+  padding: 10px 20px;
+  display: none;
 }
 
 /* line 6, ../../dev/sass/misc/_helpers.scss */

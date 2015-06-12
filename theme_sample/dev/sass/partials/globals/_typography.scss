@@ -75,27 +75,23 @@ h6, .h6, .zeta {
 
 .mega {
 
-	  @include font(72);
-
+	@include font(72);
 }
 
 small,
 .tiny {
 
     @include font(14);
-
 }
 
 strong {
 
-    font-weight: bold;
-
+    font-family: $gibsonsemibold;
 }
 
 em {
 
     font-style: italic;
-
 }
 
 

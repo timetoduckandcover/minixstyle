@@ -1,48 +1,130 @@
 
+<form action="">
+	<div class="header-push">
+		<div id="product">
+			<div class="wrapper padding">
+				<div class="row">
 
-<div class="header-push">
-	<div id="product">
-		<div class="wrapper padding">
-			<div class="row">
-				<div class="col-xs-12 col-sm-1 product-thumbnails">
-					<ul>
-						<li>
-							<a href="javascript:;" class="product-thumbnail">
-								<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;" class="product-thumbnail">
-								<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;" class="product-thumbnail">
-								<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;" class="product-thumbnail">
-								<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;" class="product-thumbnail">
-								<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-6">
-					<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
-				</div>
-				<div class="col-xs-12 col-sm-4 product-details">
-					<div class="product-details-header">
-						<h2 class="brand">Mini X Basics</h2>
-						<h1>Oversized Tee - Black</h1>
+					<!-- Thumbnails -->
+					<div class="col-xs-12 col-sm-1 product-thumbnails">
+						<ul>
+							<li>
+								<a href="javascript:;" class="product-thumbnail">
+									<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="product-thumbnail">
+									<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="product-thumbnail">
+									<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="product-thumbnail">
+									<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="product-thumbnail">
+									<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Main product image -->
+					<div class="col-xs-12 col-sm-6 product-main-image">
+						<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
+					</div>
+
+					<!-- Product details -->
+					<div class="col-xs-12 col-sm-4 product-details">
+
+						<!-- Product details header -->
+						<div class="product-details-header">
+							<h2 class="brand">Mini X Basics</h2>
+							<h1>Oversized Tee - Black</h1>
+							<div class="price">
+								<span class="price-left">$30 Store</span>
+								<span class="price-right">$24 VIP</span>
+							</div>
+						</div>
+
+						<!-- Product Variants -->
+						<div class="product-variants">
+							<ul>
+								<li>
+									<a href="javascript:;" class="active">6-12m</a>
+								</li>
+								<li>
+									<a href="javascript:;">12-18m</a>
+								</li>
+								<li>
+									<a href="javascript:;">18-24m</a>
+								</li>
+								<li>
+									<a href="javascript:;">2-3y</a>
+								</li>
+								<li>
+									<a href="javascript:;">3-4y</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="sold-out">4-5y</a>
+								</li>
+								<li>
+									<a href="javascript:;">5-6y</a>
+								</li>
+								<li>
+									<a href="javascript:;">6-8y</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Add to cart -->
+						<div class="add-to-cart">
+							<input type="submit" class="btn" value="Add to bag"/>
+						</div>
+
+						<!-- Extra message -->
+						<span class="extra-message"><strong>Free Shipping</strong> On US Orders $50+</span>
+
+						<!-- Tabs -->
+						<div class="product-tabs">
+							<ul>
+								<li>
+									<a href="javascript:;" class="product-tab-header">Style Notes</a>
+									<div class="product-tab-content">
+										<p>Lorem ipsum style.</p>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;" class="product-tab-header">Product Details</a>
+									<div class="product-tab-content">
+										<p>Lorem ipsum product details.</p>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;" class="product-tab-header">Size &amp; Fit</a>
+									<div class="product-tab-content">
+										<p>Lorem ipsum size and fit.</p>
+									</div>
+								</li>
+								<li>
+									<a href="javascript:;" class="product-tab-header">Returns</a>
+									<div class="product-tab-content">
+										<p>Lorem ipsum returns.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</form>
