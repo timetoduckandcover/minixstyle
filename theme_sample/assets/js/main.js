@@ -1644,6 +1644,12 @@ function getSubNavHeight() {
 }
 getSubNavHeight();
 
+$('.has-mobile-sub-nav').on("click", function() {
+
+	$('.mobile-sub-nav').slideUp();
+	$(this).parent().find('.mobile-sub-nav').slideToggle();
+});
+
 
 // Fitvids
 //$('.video-wrapper').fitVids();

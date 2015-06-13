@@ -131,20 +131,18 @@ $header-height: $baseline*3;
 	// Left nav
 	.nav-left {
 
-		display: none;
-
-		@include breakpoint($tablet) {
-
-			display: block;
-		}
-
 		padding-left: $burger-push;
 
 		ul {
 
 			li {
 
-				margin-right: $baseline*1.5;
+				margin-right: $baseline/2;
+
+				@media all and(min-width:1000px) {
+
+					margin-right: $baseline*1.5;
+				}
 			}
 		}
 	}
@@ -153,12 +151,6 @@ $header-height: $baseline*3;
 	.nav-right {
 
 		padding-right: $baseline;
-		display: none;
-
-		@include breakpoint($tablet) {
-
-			display: block;
-		}
 
 		& > ul {
 
@@ -166,7 +158,12 @@ $header-height: $baseline*3;
 
 			& > li {
 
-				margin-left: $baseline*1.5;
+				margin-left: $baseline/2;
+
+				@media all and(min-width:1000px) {
+
+					margin-right: $baseline*1.5;
+				}
 
 				&.cart-link {
 
@@ -179,6 +176,22 @@ $header-height: $baseline*3;
 					}
 				}
 			}
+		}
+	}
+
+	// Mobile header 
+	.mobile-header {
+
+		.cart-link {
+
+			position: absolute;
+			right: $baseline;
+			top: 16px;
+		}
+
+		.mobile-sub-nav {
+
+			display: none;
 		}
 	}
 
@@ -205,10 +218,19 @@ $header-height: $baseline*3;
 	@include breakpoint($tablet) {
 
 		position: absolute;
-		top: 2px;
 		left: 0;
 		float: none;
 		padding: 0;
+
+		&.desktop {
+
+			top: 0;
+		}
+
+		&.mobile {
+
+			top: 2px;
+		}
 	}
 }
 
@@ -231,7 +253,6 @@ $header-height: $baseline*3;
 
 			color: $col-black;
 			text-transform: uppercase;
-			font-family: $gibsonlight;
 			@include font(14);
 			@include transition(all .2s ease-in-out);
 			padding-bottom: 4px;
@@ -243,11 +264,53 @@ $header-height: $baseline*3;
 			}
 		}
 	}
+
+	&.desktop {
+
+		a {
+
+			font-family: $gibsonlight;
+		}
+	}
+
+	&.mobile {
+
+		a {
+
+			font-family: $gibsonsemibold;
+
+			&:hover {
+
+				border: 0;
+			}
+
+			&.has-mobile-sub-nav {
+
+				&:after {
+
+					content: '>';
+				}
+			}
+		}
+
+		.mobile-sub-nav {
+
+			margin-top: 10px;
+
+			a {
+
+				font-family: $gibsonregular;
+				text-indent: $baseline/1.5;
+				display: block;
+				line-height: 26px;
+			}
+		}
+	}
 }
 
 .burger {
 
-	height: 27px;
+	height: 26px;
 	width: 29px;
 	display: block;
 	position: relative;
@@ -255,7 +318,7 @@ $header-height: $baseline*3;
 	@include breakpoint($tablet) {
 
 		position: absolute;
-		top: 16px;
+		top: 18px;
 		left: $baseline;
 	}
 
