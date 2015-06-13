@@ -149,13 +149,23 @@
 				li {
 
 					display: block;
-					border-left: 1px solid $col-black;
-					border-right: 1px solid $col-black;
-					border-bottom: 1px solid $col-black;
+					border-bottom: 1px solid $col-darkgrey;
+
+					@include breakpoint($tablet) {
+
+						border-right: 1px solid $col-black;
+						border-left: 1px solid $col-black;
+						border-bottom: 1px solid $col-black;
+					}
 
 					&:first-child {
 
-						border-top: 1px solid $col-black;
+						border-top: 1px solid $col-darkgrey;
+
+						@include breakpoint($tablet) {
+
+							border-top: 1px solid $col-black;
+						}
 					}
 
 					.product-tab-header {
@@ -188,6 +198,19 @@
 					}
 				}
 			}
+		}
+	}
+
+	// Related & Suggestions
+	.product-related,
+	.product-suggestions {
+
+		text-align: center;
+		margin-top: $baseline*2;
+
+		h3 {
+
+			font-family: $gibsonregular;
 		}
 	}
 }

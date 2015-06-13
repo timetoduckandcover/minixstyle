@@ -3,10 +3,11 @@
 	<div class="header-push">
 		<div id="product">
 			<div class="wrapper padding">
+
 				<div class="row">
 
 					<!-- Thumbnails -->
-					<div class="col-xs-12 col-md-1 product-thumbnails">
+					<div class="col-xs-12 col-md-1 product-thumbnails hide-small">
 						<ul>
 							<li>
 								<a href="javascript:;" class="product-thumbnail">
@@ -122,6 +123,124 @@
 							</ul>
 						</div>
 
+					</div>
+				</div>
+
+				<!-- Related Products -->
+				<div class="row product-related">
+					<div class="col-xs-12">
+						<h3>Get the look</h3>
+					</div>
+					<div class="col-xs-6 col-md-3 mb">
+						<div class="collection-item">
+							<a href="product.php">
+								<img src="assets/img/products/akid.jpeg" alt="Collection item" class="img-full" />
+								<h2 class="epsilon">Mini X Basics</h2>
+								<span class="short-description">Rolled Sleeve T-Shirt</span>
+								<div class="price">
+									<span class="price-left">$40</span>
+									<span class="price-right">VIP: $26</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3 mb">
+						<div class="collection-item">
+							<a href="product.php">
+								<img src="assets/img/products/akid.jpeg" alt="Collection item" class="img-full" />
+								<h2 class="epsilon">Mini X Basics</h2>
+								<span class="short-description">Rolled Sleeve T-Shirt</span>
+								<div class="price">
+									<span class="price-left">$40</span>
+									<span class="price-right">VIP: $26</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3 mb">
+						<div class="collection-item">
+							<a href="product.php">
+								<img src="assets/img/products/akid.jpeg" alt="Collection item" class="img-full" />
+								<h2 class="epsilon">Mini X Basics</h2>
+								<span class="short-description">Rolled Sleeve T-Shirt</span>
+								<div class="price">
+									<span class="price-left">$40</span>
+									<span class="price-right">VIP: $26</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3 mb">
+						<div class="collection-item">
+							<a href="product.php">
+								<img src="assets/img/products/akid.jpeg" alt="Collection item" class="img-full" />
+								<h2 class="epsilon">Mini X Basics</h2>
+								<span class="short-description">Rolled Sleeve T-Shirt</span>
+								<div class="price">
+									<span class="price-left">$40</span>
+									<span class="price-right">VIP: $26</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Suggestions -->
+				<div class="row product-suggestions">
+					<div class="col-xs-12">
+						<h3>You may also like</h3>
+					</div>
+					<div class="col-xs-6 col-md-3 mb">
+						<div class="collection-item">
+							<a href="product.php">
+								<img src="assets/img/products/akid.jpeg" alt="Collection item" class="img-full" />
+								<h2 class="epsilon">Mini X Basics</h2>
+								<span class="short-description">Rolled Sleeve T-Shirt</span>
+								<div class="price">
+									<span class="price-left">$40</span>
+									<span class="price-right">VIP: $26</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3 mb">
+						<div class="collection-item">
+							<a href="product.php">
+								<img src="assets/img/products/akid.jpeg" alt="Collection item" class="img-full" />
+								<h2 class="epsilon">Mini X Basics</h2>
+								<span class="short-description">Rolled Sleeve T-Shirt</span>
+								<div class="price">
+									<span class="price-left">$40</span>
+									<span class="price-right">VIP: $26</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3 mb">
+						<div class="collection-item">
+							<a href="product.php">
+								<img src="assets/img/products/akid.jpeg" alt="Collection item" class="img-full" />
+								<h2 class="epsilon">Mini X Basics</h2>
+								<span class="short-description">Rolled Sleeve T-Shirt</span>
+								<div class="price">
+									<span class="price-left">$40</span>
+									<span class="price-right">VIP: $26</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3 mb">
+						<div class="collection-item">
+							<a href="product.php">
+								<img src="assets/img/products/akid.jpeg" alt="Collection item" class="img-full" />
+								<h2 class="epsilon">Mini X Basics</h2>
+								<span class="short-description">Rolled Sleeve T-Shirt</span>
+								<div class="price">
+									<span class="price-left">$40</span>
+									<span class="price-right">VIP: $26</span>
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>

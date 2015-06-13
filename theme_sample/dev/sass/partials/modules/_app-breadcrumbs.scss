@@ -28,6 +28,11 @@
 
 				color: $col-lightgrey;
 				text-transform: uppercase;
+
+				&:hover {
+
+					color: $col-black;
+				}
 			}
 		}
 	}

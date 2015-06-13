@@ -13,10 +13,10 @@
 
 			<!-- Content -->
 			<div class="row">
-				<div class="col-xs-12 col-sm-3">
+				<div class="col-xs-12 col-md-3">
 					<?php include('partials/pages/page-partials/page-sidebar.php');?>
 				</div>
-				<div class="col-xs-12 col-sm-9 page-wyziwig">
+				<div class="col-xs-12 col-md-9 page-wyziwig">
 
 					<!-- Wyziwig content will go here -->
 					<p>Content from the wyziwig will go here, generic page content</p>

@@ -6,7 +6,7 @@
 <header class="global-header">
    <div class="wrapper">
    		<div class="row full">
-	   		<div class="col-md-4 full">
+	   		<div class="col-xs-3 col-sm-4 full">
 	   			<nav class="burger-menu">
 					<a href="javascript:;" class="burger">
 						<i class="top"></i>
@@ -48,8 +48,9 @@
 	   			</nav>
 	   			<nav class="nav-left visible-nav">
 	   				<ul>
-	   					<li>
+	   					<li class="has-sub-nav">
 	   						<a href="collection.php">Shop</a>
+	   						<?php include('partials/pages/page-partials/header-sub-nav.php');?>
 	   					</li>
 	   					<li>
 	   						<a href="about.php">About</a>
@@ -60,12 +61,12 @@
 	   				</ul>
 	   			</nav>
 	   		</div>
-	   		<div class="col-md-4 full">
+	   		<div class="col-xs-4 full">
 	   			<a href="/" class="logo">
 	   				<img src="assets/img/theme/logo.png" alt="Mini X Logo" class="img-full" />
 	   			</a>
 	   		</div>
-	   		<div class="col-md-4 full">
+	   		<div class="col-xs-4 full">
 	   			<nav class="nav-right visible-nav">
 	   				<ul>
 	   					<li>

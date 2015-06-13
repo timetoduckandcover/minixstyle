@@ -41,7 +41,7 @@
 					color: $col-black;
 					font-family: $gibsonsemibold;
 					display: block;
-					padding: 20px 0 0 0;
+					padding: $baseline 0;
 					border-bottom: 4px solid transparent;
 					@include transition(all .2s ease-in-out);
 
@@ -50,6 +50,28 @@
 						border-bottom: 4px solid $col-lime;
 						text-decoration: none;
 					}
+				}
+
+				&.has-sub-nav {
+
+					&:hover {
+
+						.sub-nav {
+
+							display: block;
+						}
+					}
+				}
+
+				.sub-nav {
+
+					display: none;
+					background: $col-white;
+					position: fixed;
+					width: 100%;
+					top: 60px;
+					left: 0;
+					right: 0;
 				}
 			}
 		}
@@ -133,17 +155,11 @@
 	display: none;
 	background: $col-white;
 	z-index: 2;
-	padding: $baseline 0;
-
-	@include breakpoint($tablet) {
-		
-		position: absolute;
-		left: 0;
-		top: 57px;
-		width: 300px;
-		padding: $baseline;
-	}
-
+	padding: $baseline;
+	position: absolute;
+	left: 0;
+	top: 57px;
+	width: 300px;
 
 	li {
 
