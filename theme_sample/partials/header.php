@@ -78,9 +78,9 @@
 	   					<li>
 	   						<a href="account.php">Sign in</a>
 	   					</li>
-	   					<li>
-	   						<a href="javascript:;" class="cart-link">cart</a>
-	   						<?php include('partials/pages/page-partials/cart.php');?>
+	   					<li class="cart-link">
+	   						<a href="/cart.php">cart</a>
+	   						<?php include('partials/pages/page-partials/cart-quickview.php');?>
 	   					</li>
 	   				</ul>
 	   			</nav>

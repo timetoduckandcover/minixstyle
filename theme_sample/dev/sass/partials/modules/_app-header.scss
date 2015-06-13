@@ -2,6 +2,10 @@
 // HEADER 
 // ============================================================
 
+$burger-push: $baseline+55px;
+$header-height: $baseline*3;
+
+
 .global-header {
 
 	z-index: 1;
@@ -14,7 +18,7 @@
 		top: 0;
 		left: 0;
 		right: 0;
-		height: 60px;
+		height: $header-height;
 	}
 
 	// Logo
@@ -47,8 +51,17 @@
 
 					&:hover {
 
-						border-bottom: 4px solid $col-lime;
+						//border-bottom: 4px solid $col-lime;
 						text-decoration: none;
+
+						&:after {
+
+							content: '';
+							width: 100%;
+							background: $col-lime;
+							height: 4px;
+							display: block;
+						}
 					}
 				}
 
@@ -69,9 +82,47 @@
 					background: $col-white;
 					position: fixed;
 					width: 100%;
-					top: 60px;
+					top: 59px;
 					left: 0;
 					right: 0;
+
+					.header-left-push {
+
+						padding: $baseline $baseline $baseline*2 $burger-push;
+					}
+
+					.sub-nav-list {
+
+						border-right: 1px solid $col-black;
+
+						&:last-child {
+
+							border: none;
+						}
+
+						a {
+
+							text-transform: uppercase;
+						}
+					}
+
+					h3 {
+
+						&.more {
+
+							margin: $baseline/2 0 $baseline*2 0;
+
+							a {
+
+								font-family: $gibsonsemibold;
+							}
+						}
+
+						&.title {
+
+							margin-bottom: $baseline;
+						}
+					}
 				}
 			}
 		}
@@ -87,13 +138,13 @@
 			display: block;
 		}
 
-		padding-left: $baseline+45px;
+		padding-left: $burger-push;
 
 		ul {
 
 			li {
 
-				margin-right: $baseline/2;
+				margin-right: $baseline*1.5;
 			}
 		}
 	}
@@ -115,7 +166,18 @@
 
 			& > li {
 
-				margin-left: $baseline/2;
+				margin-left: $baseline*1.5;
+
+				&.cart-link {
+
+					&:hover {
+
+						#cart {
+
+							display: block;
+						}
+					}
+				}
 			}
 		}
 	}
