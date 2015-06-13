@@ -56,7 +56,12 @@
 
 	.collection-item { 
 
-		padding: $baseline/2;
+		padding: 0;
+
+		@include breakpoint($mobile) {
+
+			padding: $baseline/2;
+		}
 	}
 
 	// Sidebar

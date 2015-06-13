@@ -3,9 +3,7 @@
 // LINKS 
 // ============================================================
 
-
 $linkColor: $col-black;
-
 
 a {
 
@@ -14,9 +12,15 @@ a {
 	@include transition(all .2s ease-in-out);
 	border-bottom: 2px solid transparent;
 
-	&:link {}
+	&:link {
 
-	&:visited {}
+		text-decoration: none;
+	}
+
+	&:visited {
+
+		text-decoration: none;
+	}
 
 	&:hover {
 

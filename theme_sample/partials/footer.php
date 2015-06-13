@@ -4,7 +4,7 @@
 	<footer class="global-footer">
 		<div class="wrapper padding">
             <div class="row">
-                <div class="col-xs-12 col-sm-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <h4 class="epsilon">Mini X Company</h4>
                     <ul>
                         <li>
@@ -21,7 +21,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-sm-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <h4 class="epsilon">Customer Care</h4>
                     <ul>
                         <li>
@@ -38,11 +38,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-xs-12 col-sm-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <h4 class="epsilon">Find Us On</h4>
                     <?php include('partials/pages/page-partials/social.php');?>
                 </div>
-                <div class="col-xs-12 col-sm-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <h4 class="epsilon">Join Our Newsletter</h4>
                     <?php include('partials/pages/page-partials/footer-newsletter.php');?>
                 </div>

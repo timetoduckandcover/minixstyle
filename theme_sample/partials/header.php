@@ -6,7 +6,7 @@
 <header class="global-header">
    <div class="wrapper">
    		<div class="row full">
-	   		<div class="col-sm-4 full">
+	   		<div class="col-md-4 full">
 	   			<nav class="burger-menu">
 					<a href="javascript:;" class="burger">
 						<i class="top"></i>
@@ -60,16 +60,16 @@
 	   				</ul>
 	   			</nav>
 	   		</div>
-	   		<div class="col-sm-4 full">
+	   		<div class="col-md-4 full">
 	   			<a href="/" class="logo">
 	   				<img src="assets/img/theme/logo.png" alt="Mini X Logo" class="img-full" />
 	   			</a>
 	   		</div>
-	   		<div class="col-sm-4 full">
+	   		<div class="col-md-4 full">
 	   			<nav class="nav-right visible-nav">
 	   				<ul>
 	   					<li>
-	   						<a href="help.php">Help</a>
+	   						<a href="page-with-sidebar.php">Help</a>
 	   					</li>
 	   					<li>
 	   						<a href="/">Get $20</a>

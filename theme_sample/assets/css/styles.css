@@ -334,14 +334,18 @@ input[type="submit"] {
   display: inline-block;
   text-transform: uppercase;
   font-family: "GibsonLight", arial, sans-serif;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-/* line 81, ../../dev/sass/partials/globals/_forms.scss */
+/* line 82, ../../dev/sass/partials/globals/_forms.scss */
 .btn.cta,
 button.cta,
 input[type="submit"].cta {
   padding: 6.66667px 50px;
 }
-/* line 86, ../../dev/sass/partials/globals/_forms.scss */
+/* line 87, ../../dev/sass/partials/globals/_forms.scss */
 .btn:hover,
 button:hover,
 input[type="submit"]:hover {
@@ -350,21 +354,21 @@ input[type="submit"]:hover {
   text-decoration: none;
   border: 1px solid #222222;
 }
-/* line 94, ../../dev/sass/partials/globals/_forms.scss */
+/* line 95, ../../dev/sass/partials/globals/_forms.scss */
 .btn.secondary,
 button.secondary,
 input[type="submit"].secondary {
   background: #2b78c4;
   color: white;
 }
-/* line 99, ../../dev/sass/partials/globals/_forms.scss */
+/* line 100, ../../dev/sass/partials/globals/_forms.scss */
 .btn.secondary:hover,
 button.secondary:hover,
 input[type="submit"].secondary:hover {
   color: white;
   background: #c4c416;
 }
-/* line 106, ../../dev/sass/partials/globals/_forms.scss */
+/* line 107, ../../dev/sass/partials/globals/_forms.scss */
 .btn:hover,
 button:hover,
 input[type="submit"]:hover {
@@ -1461,7 +1465,7 @@ input[type="submit"]:hover {
     margin-left: 0%;
   }
 }
-/* line 10, ../../dev/sass/partials/globals/_links.scss */
+/* line 8, ../../dev/sass/partials/globals/_links.scss */
 a {
   text-decoration: none;
   color: #222222;
@@ -1471,12 +1475,20 @@ a {
   transition: all 0.2s ease-in-out;
   border-bottom: 2px solid transparent;
 }
-/* line 21, ../../dev/sass/partials/globals/_links.scss */
+/* line 15, ../../dev/sass/partials/globals/_links.scss */
+a:link {
+  text-decoration: none;
+}
+/* line 20, ../../dev/sass/partials/globals/_links.scss */
+a:visited {
+  text-decoration: none;
+}
+/* line 25, ../../dev/sass/partials/globals/_links.scss */
 a:hover {
   text-decoration: none;
   border-bottom: 2px solid #b7f0e7;
 }
-/* line 27, ../../dev/sass/partials/globals/_links.scss */
+/* line 31, ../../dev/sass/partials/globals/_links.scss */
 a:active {
   text-decoration: none;
 }
@@ -1686,20 +1698,25 @@ table th, table td {
   position: absolute;
   left: 0;
   right: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 205, ../../dev/sass/partials/modules/_app-header.scss */
+/* line 206, ../../dev/sass/partials/modules/_app-header.scss */
 .burger i.top {
   top: 0;
 }
-/* line 210, ../../dev/sass/partials/modules/_app-header.scss */
+/* line 211, ../../dev/sass/partials/modules/_app-header.scss */
 .burger i.middle {
   top: 10px;
 }
-/* line 215, ../../dev/sass/partials/modules/_app-header.scss */
+/* line 216, ../../dev/sass/partials/modules/_app-header.scss */
 .burger i.bottom {
   bottom: 0;
 }
@@ -1751,11 +1768,14 @@ table th, table td {
   text-transform: uppercase;
 }
 
-/* line 2, ../../dev/sass/partials/modules/_app-home.scss */
-.home-promos {
-  margin-top: 60px;
+@media (min-width: 767px) {
+  /* line 3, ../../dev/sass/partials/modules/_app-content.scss */
+  .global-content {
+    margin-top: 60px;
+  }
 }
-/* line 6, ../../dev/sass/partials/modules/_app-home.scss */
+
+/* line 4, ../../dev/sass/partials/modules/_app-home.scss */
 .home-promos .home-promo {
   position: relative;
   background-repeat: no-repeat;
@@ -1766,19 +1786,19 @@ table th, table td {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 17, ../../dev/sass/partials/modules/_app-home.scss */
+/* line 15, ../../dev/sass/partials/modules/_app-home.scss */
 .home-promos .home-promo a {
   border: 0;
 }
-/* line 21, ../../dev/sass/partials/modules/_app-home.scss */
+/* line 19, ../../dev/sass/partials/modules/_app-home.scss */
 .home-promos .home-promo a:hover {
   border: 0;
 }
-/* line 27, ../../dev/sass/partials/modules/_app-home.scss */
+/* line 25, ../../dev/sass/partials/modules/_app-home.scss */
 .home-promos .home-promo .caption {
   text-align: center;
 }
-/* line 34, ../../dev/sass/partials/modules/_app-home.scss */
+/* line 32, ../../dev/sass/partials/modules/_app-home.scss */
 .home-promos .home-promo.home-promo-1 .caption {
   position: absolute;
   top: 50%;
@@ -1790,7 +1810,7 @@ table th, table td {
   transform: translate(-50%, -50%);
 }
 @media (min-width: 767px) {
-  /* line 34, ../../dev/sass/partials/modules/_app-home.scss */
+  /* line 32, ../../dev/sass/partials/modules/_app-home.scss */
   .home-promos .home-promo.home-promo-1 .caption {
     position: absolute;
     top: 50%;
@@ -1802,16 +1822,16 @@ table th, table td {
     left: 10%;
   }
 }
-/* line 46, ../../dev/sass/partials/modules/_app-home.scss */
+/* line 44, ../../dev/sass/partials/modules/_app-home.scss */
 .home-promos .home-promo.home-promo-2 {
   height: 370px;
 }
-/* line 56, ../../dev/sass/partials/modules/_app-home.scss */
+/* line 54, ../../dev/sass/partials/modules/_app-home.scss */
 .home-promos .home-promo.home-promo-3 {
   height: 370px;
 }
 
-/* line 68, ../../dev/sass/partials/modules/_app-home.scss */
+/* line 66, ../../dev/sass/partials/modules/_app-home.scss */
 .home-new-arrivals {
   margin-top: 40px;
 }
@@ -1860,13 +1880,19 @@ table th, table td {
 
 /* line 57, ../../dev/sass/partials/modules/_app-collection.scss */
 #collection .collection-item {
-  padding: 10px;
+  padding: 0;
 }
-/* line 65, ../../dev/sass/partials/modules/_app-collection.scss */
+@media (min-width: 450px) {
+  /* line 57, ../../dev/sass/partials/modules/_app-collection.scss */
+  #collection .collection-item {
+    padding: 10px;
+  }
+}
+/* line 70, ../../dev/sass/partials/modules/_app-collection.scss */
 #collection #collection-sidebar .collection-sidebar-list {
   margin-bottom: 30px;
 }
-/* line 69, ../../dev/sass/partials/modules/_app-collection.scss */
+/* line 74, ../../dev/sass/partials/modules/_app-collection.scss */
 #collection #collection-sidebar .collection-sidebar-list a {
   text-transform: uppercase;
   font-size: 13px;

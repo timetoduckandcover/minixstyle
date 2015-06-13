@@ -2,7 +2,7 @@
 <div class="home-new-arrivals">
 
 	<div class="row">
-		<div class="col-xs-6 col-sm-3 mb">
+		<div class="col-xs-6 col-md-3 mb">
 			<div class="collection-item">
 				<a href="product.php">
 					<img src="assets/img/products/ror_bag.jpeg" alt="Collection item" class="img-full" />
@@ -15,7 +15,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="col-xs-6 col-sm-3 mb">
+		<div class="col-xs-6 col-md-3 mb">
 			<div class="collection-item">
 				<a href="product.php">
 					<img src="assets/img/products/spree_mug.jpeg" alt="Collection item" class="img-full" />
@@ -28,7 +28,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="col-xs-6 col-sm-3 mb">
+		<div class="col-xs-6 col-md-3 mb">
 			<div class="collection-item">
 				<a href="product.php">
 					<img src="assets/img/products/ror_baseball_jersey_green.png" alt="Collection item" class="img-full" />
@@ -41,7 +41,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="col-xs-6 col-sm-3 mb">
+		<div class="col-xs-6 col-md-3 mb">
 			<div class="collection-item">
 				<a href="product.php">
 					<img src="assets/img/products/ror_stein_back.jpeg" alt="Collection item" class="img-full" />
