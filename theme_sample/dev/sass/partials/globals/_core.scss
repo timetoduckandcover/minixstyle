@@ -56,6 +56,11 @@ body {
 .header-push {
 
 	padding: $baseline*3 0;
+
+	&.less {
+
+		padding: $baseline 0;
+	}
 }
 
 #skip-to-content {

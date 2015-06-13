@@ -1,0 +1,20 @@
+
+
+.social {
+
+	li {
+
+		display: inline-block;
+
+		a {
+
+			display: block;
+			width: 34px;
+
+			&:hover {
+
+				border: 0;
+			}
+		}
+	}
+}

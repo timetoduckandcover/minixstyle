@@ -6,7 +6,7 @@
 				<div class="row">
 
 					<!-- Thumbnails -->
-					<div class="col-xs-12 col-sm-1 product-thumbnails">
+					<div class="col-xs-12 col-md-1 product-thumbnails">
 						<ul>
 							<li>
 								<a href="javascript:;" class="product-thumbnail">
@@ -37,12 +37,12 @@
 					</div>
 
 					<!-- Main product image -->
-					<div class="col-xs-12 col-sm-6 product-main-image">
+					<div class="col-xs-12 col-md-6 product-main-image">
 						<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
 					</div>
 
 					<!-- Product details -->
-					<div class="col-xs-12 col-sm-4 product-details">
+					<div class="col-xs-12 col-md-4 product-details">
 
 						<!-- Product details header -->
 						<div class="product-details-header">

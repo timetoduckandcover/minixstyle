@@ -3,12 +3,12 @@
 <img src="assets/img/banners/collection_banner.jpg" alt="Collection banner" class="img-full" />
 <!-- endif -->
 
-<div class="header-push">
+<div class="header-push less">
 	<div id="collection">
 		<div class="wrapper padding">
 			<div class="row">
 				<div class="col-xs-12 col-sm-3">
-					<?php include('partials/pages/page-partials/sidebar.php');?>
+					<?php include('partials/pages/page-partials/collection-sidebar.php');?>
 				</div>
 				<div class="col-xs-12 col-sm-9">
 					<div class="row">

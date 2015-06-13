@@ -1,0 +1,34 @@
+
+
+.breadcrumbs {
+
+	margin-bottom: $baseline;
+
+	ul {
+
+		li {
+
+			display: inline-block;
+
+			&:after {
+
+				content: '/';
+				color: $col-lightgrey;
+			}
+
+			&:last-child {
+
+				&:after {
+
+					content: '';
+				}
+			}
+
+			a {
+
+				color: $col-lightgrey;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

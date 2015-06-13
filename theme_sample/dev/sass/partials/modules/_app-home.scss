@@ -1,13 +1,31 @@
 
 .home-promos {
 
+	margin-top: 60px;
+
 	.home-promo {
 
 		position: relative;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-position: fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+
+		a {
+
+			border: 0;
+
+			&:hover {
+
+				border: 0;
+			}
+		}
 
 		.caption {
 
-			@include centre(y);
 			text-align: center;
 		}
 
@@ -15,29 +33,39 @@
 
 			.caption {
 
-				left: 15%;
+				@include centre;
 
-				h1 {
+				@include breakpoint($tablet) {
 
-		
+					@include centre(y);
+					left: 10%;
 				}
 			}
 		}
 
 		&.home-promo-2 {
 
-			.caption {
+			height: 370px;
 
-				right: 15%;
-			}
+			// .caption {
+
+			// 	right: 5%;
+			// }
 		}
 
 		&.home-promo-3 {
 
-			.caption {
+			height: 370px;
+
+			// .caption {
 	
-				right: 15%;
-			}
+			// 	right: 5%;
+			// }
 		}
 	}
+}
+
+.home-new-arrivals {
+
+	margin-top: $baseline*2;
 }

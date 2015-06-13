@@ -1,73 +1,76 @@
 
+.collection-item {
 
-#collection {
+	position: relative;
+	padding: $baseline;
+	margin-bottom: $baseline*2;
 
-	.collection-item {
+	&:nth-child(4n+5) {
 
-		position: relative;
-		padding: $baseline/2;
-		margin-bottom: $baseline*2;
+		clear: left;
+	}
 
-		&:nth-child(4n+5) {
+	img {
 
-			clear: left;
+		margin-bottom: $baseline;
+	}
+
+	h2 {
+
+		text-align: center;
+	}
+
+	a {
+
+		&:hover {
+
+			text-decoration: none;
+		}
+	}
+
+	.short-description {
+
+		display: block;
+		text-align: center;
+	}
+
+	.price {
+
+		text-align: center;
+
+		.price-left {
+
+			text-align: left;
+			padding-right: $baseline/3;
 		}
 
-		img {
+		.price-right {
 
-			margin-bottom: $baseline;
-		}
-
-		h2 {
-
-			text-align: center;
-		}
-
-		a {
-
-			&:hover {
-
-				text-decoration: none;
-			}
-		}
-
-		.short-description {
-
-			display: block;
-			text-align: center;
-		}
-
-		.price {
-
-			text-align: center;
-
-			.price-left {
-
-				text-align: left;
-				padding-right: $baseline/3;
-			}
-
-			.price-right {
-
-				text-align: right;
-				padding-left: $baseline/3;
-			}
+			text-align: right;
+			padding-left: $baseline/3;
 		}
 	}
 }
 
+#collection {
 
-// Sidebar
-#collection-sidebar {
+	.collection-item { 
 
-	.collection-sidebar-list {
+		padding: $baseline/2;
+	}
 
-		margin-bottom: $baseline*1.5;
+	// Sidebar
+	#collection-sidebar {
 
-		a {
+		.collection-sidebar-list {
 
-			text-transform: uppercase;
-			@include font(13);
+			margin-bottom: $baseline*1.5;
+
+			a {
+
+				text-transform: uppercase;
+				@include font(13);
+			}
 		}
 	}
 }

@@ -17,7 +17,7 @@
                             <a href="press.php">Press</a>
                         </li>
                         <li>
-                            <a href="contact.php">Contact Us</a>
+                            <a href="page-with-sidebar.php">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -25,42 +25,26 @@
                     <h4 class="epsilon">Customer Care</h4>
                     <ul>
                         <li>
-                            <a href="faq.php">FAQ</a>
+                            <a href="page-with-sidebar.php">FAQ</a>
                         </li>
                         <li>
-                            <a href="shipping.php">Shipping &amp; Returns</a>
+                            <a href="page-with-sidebar.php">Shipping &amp; Returns</a>
                         </li>
                         <li>
-                            <a href="sizeguide.php">Fit &amp; Size Guide</a>
+                            <a href="page-with-sidebar.php">Fit &amp; Size Guide</a>
                         </li>
                         <li>
-                            <a href="giftcards.php">Gift Cards</a>
+                            <a href="page-with-sidebar.php">Gift Cards</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-3">
                     <h4 class="epsilon">Find Us On</h4>
-                    <ul>
-                        <li>
-                            <a href="/">FB</a>
-                        </li>
-                        <li>
-                            <a href="/">Tw</a>
-                        </li>
-                        <li>
-                            <a href="/">Tm</a>
-                        </li>
-                        <li>
-                            <a href="/">In</a>
-                        </li>
-                    </ul>
+                    <?php include('partials/pages/page-partials/social.php');?>
                 </div>
                 <div class="col-xs-12 col-sm-3">
                     <h4 class="epsilon">Join Our Newsletter</h4>
-                    <form action="">
-                        <input type="text">
-                        <input type="submit">
-                    </form>
+                    <?php include('partials/pages/page-partials/footer-newsletter.php');?>
                 </div>
             </div>  
         </div>

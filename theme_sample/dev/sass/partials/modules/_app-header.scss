@@ -4,6 +4,19 @@
 
 .global-header {
 
+	z-index: 1;
+	background: $col-white;
+	border-bottom: 1px solid $col-black;
+
+	@include breakpoint($tablet) {
+
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 60px;
+	}
+
 	// Logo
 	.logo {
 
@@ -13,7 +26,7 @@
 	}
 
 	// General nav styles
-	nav {
+	nav.visible-nav {
 
 		& > ul {
 
@@ -28,7 +41,7 @@
 					color: $col-black;
 					font-family: $gibsonsemibold;
 					display: block;
-					padding: 16px 0 0 0;
+					padding: 20px 0 0 0;
 					border-bottom: 4px solid transparent;
 					@include transition(all .2s ease-in-out);
 
@@ -38,40 +51,6 @@
 						text-decoration: none;
 					}
 				}
-
-				.sub-nav {
-
-					display: none;
-					position: absolute;
-					left: -$baseline;
-					top: 58px;
-					background: $col-white;
-					width: 300px;
-					z-index: 2;
-					padding: $baseline;
-
-					li {
-
-						display: block;
-
-						a {
-
-							color: $col-black;
-							text-transform: uppercase;
-							font-family: $gibsonlight;
-							@include font(14);
-							@include transition(all .2s ease-in-out);
-							padding-bottom: 4px;
-							display: block;
-
-							&:hover {
-
-								text-decoration: none;
-								color: $col-lime;
-							}
-						}
-					}
-				}
 			}
 		}
 	}
@@ -79,18 +58,20 @@
 	// Left nav
 	.nav-left {
 
-		padding-left: $baseline;
+		display: none;
+
+		@include breakpoint($tablet) {
+
+			display: block;
+		}
+
+		padding-left: $baseline+45px;
 
 		ul {
 
 			li {
 
 				margin-right: $baseline/2;
-
-				a {
-
-					
-				}
 			}
 		}
 	}
@@ -99,22 +80,146 @@
 	.nav-right {
 
 		padding-right: $baseline;
+		display: none;
 
-		ul {
+		@include breakpoint($tablet) {
+
+			display: block;
+		}
+
+		& > ul {
 
 			text-align: right;
 
-			li {
+			& > li {
 
 				margin-left: $baseline/2;
+			}
+		}
+	}
 
-				a {
+	.tagline-mobile {
 
-					
-				}
+		text-align: center;
+		padding: $baseline/2 0;
+		border-top: 1px solid $col-black;
+
+		span {
+
+			margin: 0 $baseline/2;
+		}
+	}
+}
+
+
+// Burger button & menu
+.burger-menu {
+
+	float: left;
+	padding: 16px 0 0 $baseline;
+
+	@include breakpoint($tablet) {
+
+		position: absolute;
+		top: 2px;
+		left: 0;
+		float: none;
+		padding: 0;
+	}
+}
+
+.burger-nav {
+
+	display: none;
+	background: $col-white;
+	z-index: 2;
+	padding: $baseline 0;
+
+	@include breakpoint($tablet) {
+		
+		position: absolute;
+		left: 0;
+		top: 57px;
+		width: 300px;
+		padding: $baseline;
+	}
+
+
+	li {
+
+		display: block;
+
+		a {
+
+			color: $col-black;
+			text-transform: uppercase;
+			font-family: $gibsonlight;
+			@include font(14);
+			@include transition(all .2s ease-in-out);
+			padding-bottom: 4px;
+			line-height: 30px;
+
+			&:hover {
+
+				text-decoration: none;
 			}
 		}
 	}
 }
 
+.burger {
+
+	height: 27px;
+	width: 29px;
+	display: block;
+	position: relative;
+
+	@include breakpoint($tablet) {
+
+		position: absolute;
+		top: 16px;
+		left: $baseline;
+	}
+
+	&:hover {
+
+		border: none;
+
+		i {
+
+			background: $col-lime;
+		}
+	}
+
+	i {
+
+		width: 30px;
+		height: 5px;
+		background: $col-black;
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		@include transition(all .2s ease-in-out);
+
+		&.top {
+
+			top: 0;
+		}
+
+		&.middle {
+
+			top: 10px;
+		}
+
+		&.bottom {
+
+			bottom: 0;
+		}
+	}	
+}
+
+
 // ============================================================
+
+

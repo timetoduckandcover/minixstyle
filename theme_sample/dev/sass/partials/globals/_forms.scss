@@ -28,7 +28,7 @@ textarea {
 
 	margin-bottom: $baseline/2;
 	@include border-radius($inputBorderRadius);
-	border: 1px solid $col-grey;
+	border: 1px solid $col-lightgrey;
 
 	@if $disableFocus {
 

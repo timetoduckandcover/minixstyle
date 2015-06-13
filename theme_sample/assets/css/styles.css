@@ -83,7 +83,7 @@ html {
   font-size: 100%;
 }
 
-/* line 30, ../../dev/sass/partials/globals/_typography.scss */
+/* line 28, ../../dev/sass/partials/globals/_typography.scss */
 body, input, textarea, select, button, p, a {
   font-size: 15px;
   font-size: 0.9375em;
@@ -92,66 +92,74 @@ body, input, textarea, select, button, p, a {
   font-family: "GibsonRegular", arial, sans-serif;
 }
 
-/* line 37, ../../dev/sass/partials/globals/_typography.scss */
+/* line 35, ../../dev/sass/partials/globals/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "GibsonSemiBold", arial, sans-serif;
   text-transform: uppercase;
 }
-/* line 42, ../../dev/sass/partials/globals/_typography.scss */
+/* line 40, ../../dev/sass/partials/globals/_typography.scss */
 h1.mb, h2.mb, h3.mb, h4.mb, h5.mb, h6.mb {
   margin-bottom: 10px;
 }
 
-/* line 47, ../../dev/sass/partials/globals/_typography.scss */
+/* line 45, ../../dev/sass/partials/globals/_typography.scss */
 h1, .h1, .alpha {
-  font-size: 48px;
-  font-size: 3em;
-  line-height: 72px;
+  font-size: 36px;
+  font-size: 2.25em;
+  line-height: 54px;
+}
+@media (min-width: 767px) {
+  /* line 45, ../../dev/sass/partials/globals/_typography.scss */
+  h1, .h1, .alpha {
+    font-size: 48px;
+    font-size: 3em;
+    line-height: 72px;
+  }
 }
 
-/* line 52, ../../dev/sass/partials/globals/_typography.scss */
+/* line 55, ../../dev/sass/partials/globals/_typography.scss */
 h2, .h2, .beta {
   font-size: 32px;
   font-size: 2em;
   line-height: 48px;
 }
 
-/* line 57, ../../dev/sass/partials/globals/_typography.scss */
+/* line 60, ../../dev/sass/partials/globals/_typography.scss */
 h3, .h3, .gamma {
   font-size: 24px;
   font-size: 1.5em;
   line-height: 36px;
 }
 
-/* line 62, ../../dev/sass/partials/globals/_typography.scss */
+/* line 65, ../../dev/sass/partials/globals/_typography.scss */
 h4, .h4, .delta {
   font-size: 22px;
   font-size: 1.375em;
   line-height: 33px;
 }
 
-/* line 67, ../../dev/sass/partials/globals/_typography.scss */
+/* line 70, ../../dev/sass/partials/globals/_typography.scss */
 h5, .h5, .epsilon {
   font-size: 16px;
   font-size: 1em;
   line-height: 24px;
 }
 
-/* line 71, ../../dev/sass/partials/globals/_typography.scss */
+/* line 74, ../../dev/sass/partials/globals/_typography.scss */
 h6, .h6, .zeta {
   font-size: 15px;
   font-size: 0.9375em;
   line-height: 22.5px;
 }
 
-/* line 76, ../../dev/sass/partials/globals/_typography.scss */
+/* line 79, ../../dev/sass/partials/globals/_typography.scss */
 .mega {
   font-size: 72px;
   font-size: 4.5em;
   line-height: 108px;
 }
 
-/* line 82, ../../dev/sass/partials/globals/_typography.scss */
+/* line 85, ../../dev/sass/partials/globals/_typography.scss */
 small,
 .tiny {
   font-size: 14px;
@@ -159,12 +167,17 @@ small,
   line-height: 21px;
 }
 
-/* line 87, ../../dev/sass/partials/globals/_typography.scss */
+/* line 90, ../../dev/sass/partials/globals/_typography.scss */
+p {
+  margin-bottom: 10px;
+}
+
+/* line 95, ../../dev/sass/partials/globals/_typography.scss */
 strong {
   font-family: "GibsonSemiBold", arial, sans-serif;
 }
 
-/* line 92, ../../dev/sass/partials/globals/_typography.scss */
+/* line 100, ../../dev/sass/partials/globals/_typography.scss */
 em {
   font-style: italic;
 }
@@ -211,14 +224,18 @@ body {
 .header-push {
   padding: 60px 0;
 }
+/* line 60, ../../dev/sass/partials/globals/_core.scss */
+.header-push.less {
+  padding: 20px 0;
+}
 
-/* line 61, ../../dev/sass/partials/globals/_core.scss */
+/* line 66, ../../dev/sass/partials/globals/_core.scss */
 #skip-to-content {
   position: absolute;
   top: 0;
   left: -99999999px;
 }
-/* line 67, ../../dev/sass/partials/globals/_core.scss */
+/* line 72, ../../dev/sass/partials/globals/_core.scss */
 #skip-to-content:focus {
   position: static;
 }
@@ -230,7 +247,7 @@ blockquote {
   padding: 5px 20px;
   width: 100%;
 }
-@media (min-width: 840px) {
+@media (min-width: 767px) {
   /* line 13, ../../dev/sass/partials/globals/_blockquotes.scss */
   blockquote {
     max-width: 60%;
@@ -268,7 +285,7 @@ textarea {
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
-  border: 1px solid #c9c9c9;
+  border: 1px solid #e6e7e7;
 }
 /* line 35, ../../dev/sass/partials/globals/_forms.scss */
 .btn:focus,
@@ -661,7 +678,7 @@ input[type="submit"]:hover {
   margin-left: 0%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 450px) {
   /* line 183, ../../dev/sass/partials/globals/_grid.scss */
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
@@ -922,7 +939,7 @@ input[type="submit"]:hover {
     margin-left: 0%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 767px) {
   /* line 341, ../../dev/sass/partials/globals/_grid.scss */
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
@@ -1183,7 +1200,7 @@ input[type="submit"]:hover {
     margin-left: 0%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 980px) {
   /* line 499, ../../dev/sass/partials/globals/_grid.scss */
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
@@ -1448,14 +1465,18 @@ input[type="submit"]:hover {
 a {
   text-decoration: none;
   color: #222222;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border-bottom: 2px solid transparent;
 }
-/* line 20, ../../dev/sass/partials/globals/_links.scss */
+/* line 21, ../../dev/sass/partials/globals/_links.scss */
 a:hover {
   text-decoration: none;
   border-bottom: 2px solid #b7f0e7;
 }
-/* line 26, ../../dev/sass/partials/globals/_links.scss */
+/* line 27, ../../dev/sass/partials/globals/_links.scss */
 a:active {
   text-decoration: none;
 }
@@ -1486,52 +1507,135 @@ table th, table td {
   width: 25%;
 }
 
-/* line 8, ../../dev/sass/partials/modules/_app-header.scss */
+/* line 5, ../../dev/sass/partials/modules/_app-header.scss */
+.global-header {
+  z-index: 1;
+  background: white;
+  border-bottom: 1px solid #222222;
+}
+@media (min-width: 767px) {
+  /* line 5, ../../dev/sass/partials/modules/_app-header.scss */
+  .global-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+  }
+}
+/* line 21, ../../dev/sass/partials/modules/_app-header.scss */
 .global-header .logo {
   display: block;
   width: 200px;
   margin: 0 auto;
 }
-/* line 20, ../../dev/sass/partials/modules/_app-header.scss */
-.global-header nav > ul > li {
+/* line 33, ../../dev/sass/partials/modules/_app-header.scss */
+.global-header nav.visible-nav > ul > li {
   display: inline-block;
   position: relative;
 }
-/* line 25, ../../dev/sass/partials/modules/_app-header.scss */
-.global-header nav > ul > li > a {
+/* line 38, ../../dev/sass/partials/modules/_app-header.scss */
+.global-header nav.visible-nav > ul > li > a {
   text-transform: uppercase;
   color: #222222;
   font-family: "GibsonSemiBold", arial, sans-serif;
   display: block;
-  padding: 16px 0 0 0;
+  padding: 20px 0 0 0;
   border-bottom: 4px solid transparent;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 35, ../../dev/sass/partials/modules/_app-header.scss */
-.global-header nav > ul > li > a:hover {
+/* line 48, ../../dev/sass/partials/modules/_app-header.scss */
+.global-header nav.visible-nav > ul > li > a:hover {
   border-bottom: 4px solid #b7f0e7;
   text-decoration: none;
 }
-/* line 42, ../../dev/sass/partials/modules/_app-header.scss */
-.global-header nav > ul > li .sub-nav {
+/* line 59, ../../dev/sass/partials/modules/_app-header.scss */
+.global-header .nav-left {
   display: none;
-  position: absolute;
-  left: -20px;
-  top: 58px;
-  background: white;
-  width: 300px;
-  z-index: 2;
-  padding: 20px;
+  padding-left: 65px;
 }
-/* line 53, ../../dev/sass/partials/modules/_app-header.scss */
-.global-header nav > ul > li .sub-nav li {
+@media (min-width: 767px) {
+  /* line 59, ../../dev/sass/partials/modules/_app-header.scss */
+  .global-header .nav-left {
+    display: block;
+  }
+}
+/* line 72, ../../dev/sass/partials/modules/_app-header.scss */
+.global-header .nav-left ul li {
+  margin-right: 10px;
+}
+/* line 80, ../../dev/sass/partials/modules/_app-header.scss */
+.global-header .nav-right {
+  padding-right: 20px;
+  display: none;
+}
+@media (min-width: 767px) {
+  /* line 80, ../../dev/sass/partials/modules/_app-header.scss */
+  .global-header .nav-right {
+    display: block;
+  }
+}
+/* line 90, ../../dev/sass/partials/modules/_app-header.scss */
+.global-header .nav-right > ul {
+  text-align: right;
+}
+/* line 94, ../../dev/sass/partials/modules/_app-header.scss */
+.global-header .nav-right > ul > li {
+  margin-left: 10px;
+}
+/* line 101, ../../dev/sass/partials/modules/_app-header.scss */
+.global-header .tagline-mobile {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #222222;
+}
+/* line 107, ../../dev/sass/partials/modules/_app-header.scss */
+.global-header .tagline-mobile span {
+  margin: 0 10px;
+}
+
+/* line 116, ../../dev/sass/partials/modules/_app-header.scss */
+.burger-menu {
+  float: left;
+  padding: 16px 0 0 20px;
+}
+@media (min-width: 767px) {
+  /* line 116, ../../dev/sass/partials/modules/_app-header.scss */
+  .burger-menu {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    float: none;
+    padding: 0;
+  }
+}
+
+/* line 131, ../../dev/sass/partials/modules/_app-header.scss */
+.burger-nav {
+  display: none;
+  background: white;
+  z-index: 2;
+  padding: 20px 0;
+}
+@media (min-width: 767px) {
+  /* line 131, ../../dev/sass/partials/modules/_app-header.scss */
+  .burger-nav {
+    position: absolute;
+    left: 0;
+    top: 57px;
+    width: 300px;
+    padding: 20px;
+  }
+}
+/* line 148, ../../dev/sass/partials/modules/_app-header.scss */
+.burger-nav li {
   display: block;
 }
-/* line 57, ../../dev/sass/partials/modules/_app-header.scss */
-.global-header nav > ul > li .sub-nav li a {
+/* line 152, ../../dev/sass/partials/modules/_app-header.scss */
+.burger-nav li a {
   color: #222222;
   text-transform: uppercase;
   font-family: "GibsonLight", arial, sans-serif;
@@ -1543,32 +1647,61 @@ table th, table td {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   padding-bottom: 4px;
-  display: block;
+  line-height: 30px;
 }
-/* line 67, ../../dev/sass/partials/modules/_app-header.scss */
-.global-header nav > ul > li .sub-nav li a:hover {
+/* line 162, ../../dev/sass/partials/modules/_app-header.scss */
+.burger-nav li a:hover {
   text-decoration: none;
-  color: #b7f0e7;
 }
-/* line 80, ../../dev/sass/partials/modules/_app-header.scss */
-.global-header .nav-left {
-  padding-left: 20px;
+
+/* line 170, ../../dev/sass/partials/modules/_app-header.scss */
+.burger {
+  height: 27px;
+  width: 29px;
+  display: block;
+  position: relative;
 }
-/* line 86, ../../dev/sass/partials/modules/_app-header.scss */
-.global-header .nav-left ul li {
-  margin-right: 10px;
+@media (min-width: 767px) {
+  /* line 170, ../../dev/sass/partials/modules/_app-header.scss */
+  .burger {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+  }
 }
-/* line 99, ../../dev/sass/partials/modules/_app-header.scss */
-.global-header .nav-right {
-  padding-right: 20px;
+/* line 184, ../../dev/sass/partials/modules/_app-header.scss */
+.burger:hover {
+  border: none;
 }
-/* line 103, ../../dev/sass/partials/modules/_app-header.scss */
-.global-header .nav-right ul {
-  text-align: right;
+/* line 188, ../../dev/sass/partials/modules/_app-header.scss */
+.burger:hover i {
+  background: #b7f0e7;
 }
-/* line 107, ../../dev/sass/partials/modules/_app-header.scss */
-.global-header .nav-right ul li {
-  margin-left: 10px;
+/* line 194, ../../dev/sass/partials/modules/_app-header.scss */
+.burger i {
+  width: 30px;
+  height: 5px;
+  background: #222222;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 205, ../../dev/sass/partials/modules/_app-header.scss */
+.burger i.top {
+  top: 0;
+}
+/* line 210, ../../dev/sass/partials/modules/_app-header.scss */
+.burger i.middle {
+  top: 10px;
+}
+/* line 215, ../../dev/sass/partials/modules/_app-header.scss */
+.burger i.bottom {
+  bottom: 0;
 }
 
 /* line 5, ../../dev/sass/partials/modules/_app-footer.scss */
@@ -1579,83 +1712,162 @@ table th, table td {
 .global-footer h4 {
   margin-bottom: 40px;
 }
-
-/* line 4, ../../dev/sass/partials/modules/_app-home.scss */
-.home-promos .home-promo {
-  position: relative;
+/* line 19, ../../dev/sass/partials/modules/_app-footer.scss */
+.global-footer .footer-newsletter form input[type="text"], .global-footer .footer-newsletter form select,
+.global-footer .footer-newsletter form textarea,
+.global-footer .footer-newsletter form input[type="submit"] {
+  width: 100%;
+  font-size: 16px;
+  font-size: 1em;
+  line-height: 24px;
 }
-/* line 8, ../../dev/sass/partials/modules/_app-home.scss */
-.home-promos .home-promo .caption {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  text-align: center;
-}
-/* line 16, ../../dev/sass/partials/modules/_app-home.scss */
-.home-promos .home-promo.home-promo-1 .caption {
-  left: 15%;
-}
-/* line 29, ../../dev/sass/partials/modules/_app-home.scss */
-.home-promos .home-promo.home-promo-2 .caption {
-  right: 15%;
-}
-/* line 37, ../../dev/sass/partials/modules/_app-home.scss */
-.home-promos .home-promo.home-promo-3 .caption {
-  right: 15%;
+/* line 25, ../../dev/sass/partials/modules/_app-footer.scss */
+.global-footer .footer-newsletter form input[type="text"], .global-footer .footer-newsletter form select,
+.global-footer .footer-newsletter form textarea {
+  background: #e6e7e7;
+  text-transform: uppercase;
 }
 
-/* line 5, ../../dev/sass/partials/modules/_app-collection.scss */
-#collection .collection-item {
-  position: relative;
-  padding: 10px;
-  margin-bottom: 40px;
-}
-/* line 11, ../../dev/sass/partials/modules/_app-collection.scss */
-#collection .collection-item:nth-child(4n+5) {
-  clear: left;
-}
-/* line 16, ../../dev/sass/partials/modules/_app-collection.scss */
-#collection .collection-item img {
+/* line 3, ../../dev/sass/partials/modules/_app-breadcrumbs.scss */
+.breadcrumbs {
   margin-bottom: 20px;
 }
-/* line 21, ../../dev/sass/partials/modules/_app-collection.scss */
-#collection .collection-item h2 {
+/* line 9, ../../dev/sass/partials/modules/_app-breadcrumbs.scss */
+.breadcrumbs ul li {
+  display: inline-block;
+}
+/* line 13, ../../dev/sass/partials/modules/_app-breadcrumbs.scss */
+.breadcrumbs ul li:after {
+  content: '/';
+  color: #e6e7e7;
+}
+/* line 21, ../../dev/sass/partials/modules/_app-breadcrumbs.scss */
+.breadcrumbs ul li:last-child:after {
+  content: '';
+}
+/* line 27, ../../dev/sass/partials/modules/_app-breadcrumbs.scss */
+.breadcrumbs ul li a {
+  color: #e6e7e7;
+  text-transform: uppercase;
+}
+
+/* line 2, ../../dev/sass/partials/modules/_app-home.scss */
+.home-promos {
+  margin-top: 60px;
+}
+/* line 6, ../../dev/sass/partials/modules/_app-home.scss */
+.home-promos .home-promo {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 17, ../../dev/sass/partials/modules/_app-home.scss */
+.home-promos .home-promo a {
+  border: 0;
+}
+/* line 21, ../../dev/sass/partials/modules/_app-home.scss */
+.home-promos .home-promo a:hover {
+  border: 0;
+}
+/* line 27, ../../dev/sass/partials/modules/_app-home.scss */
+.home-promos .home-promo .caption {
   text-align: center;
 }
-/* line 28, ../../dev/sass/partials/modules/_app-collection.scss */
-#collection .collection-item a:hover {
+/* line 34, ../../dev/sass/partials/modules/_app-home.scss */
+.home-promos .home-promo.home-promo-1 .caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 767px) {
+  /* line 34, ../../dev/sass/partials/modules/_app-home.scss */
+  .home-promos .home-promo.home-promo-1 .caption {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 10%;
+  }
+}
+/* line 46, ../../dev/sass/partials/modules/_app-home.scss */
+.home-promos .home-promo.home-promo-2 {
+  height: 370px;
+}
+/* line 56, ../../dev/sass/partials/modules/_app-home.scss */
+.home-promos .home-promo.home-promo-3 {
+  height: 370px;
+}
+
+/* line 68, ../../dev/sass/partials/modules/_app-home.scss */
+.home-new-arrivals {
+  margin-top: 40px;
+}
+
+/* line 2, ../../dev/sass/partials/modules/_app-collection.scss */
+.collection-item {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+/* line 8, ../../dev/sass/partials/modules/_app-collection.scss */
+.collection-item:nth-child(4n+5) {
+  clear: left;
+}
+/* line 13, ../../dev/sass/partials/modules/_app-collection.scss */
+.collection-item img {
+  margin-bottom: 20px;
+}
+/* line 18, ../../dev/sass/partials/modules/_app-collection.scss */
+.collection-item h2 {
+  text-align: center;
+}
+/* line 25, ../../dev/sass/partials/modules/_app-collection.scss */
+.collection-item a:hover {
   text-decoration: none;
 }
-/* line 34, ../../dev/sass/partials/modules/_app-collection.scss */
-#collection .collection-item .short-description {
+/* line 31, ../../dev/sass/partials/modules/_app-collection.scss */
+.collection-item .short-description {
   display: block;
   text-align: center;
 }
-/* line 40, ../../dev/sass/partials/modules/_app-collection.scss */
-#collection .collection-item .price {
+/* line 37, ../../dev/sass/partials/modules/_app-collection.scss */
+.collection-item .price {
   text-align: center;
 }
-/* line 44, ../../dev/sass/partials/modules/_app-collection.scss */
-#collection .collection-item .price .price-left {
+/* line 41, ../../dev/sass/partials/modules/_app-collection.scss */
+.collection-item .price .price-left {
   text-align: left;
   padding-right: 6.66667px;
 }
-/* line 50, ../../dev/sass/partials/modules/_app-collection.scss */
-#collection .collection-item .price .price-right {
+/* line 47, ../../dev/sass/partials/modules/_app-collection.scss */
+.collection-item .price .price-right {
   text-align: right;
   padding-left: 6.66667px;
 }
 
-/* line 63, ../../dev/sass/partials/modules/_app-collection.scss */
-#collection-sidebar .collection-sidebar-list {
+/* line 57, ../../dev/sass/partials/modules/_app-collection.scss */
+#collection .collection-item {
+  padding: 10px;
+}
+/* line 65, ../../dev/sass/partials/modules/_app-collection.scss */
+#collection #collection-sidebar .collection-sidebar-list {
   margin-bottom: 30px;
 }
-/* line 67, ../../dev/sass/partials/modules/_app-collection.scss */
-#collection-sidebar .collection-sidebar-list a {
+/* line 69, ../../dev/sass/partials/modules/_app-collection.scss */
+#collection #collection-sidebar .collection-sidebar-list a {
   text-transform: uppercase;
   font-size: 13px;
   font-size: 0.8125em;
@@ -1818,6 +2030,135 @@ table th, table td {
   display: none;
 }
 
+/* line 3, ../../dev/sass/partials/modules/_app-cart.scss */
+#cart {
+  display: none;
+  position: absolute;
+  right: -20px;
+  top: 58px;
+  background: white;
+  width: 400px;
+  z-index: 2;
+  padding: 20px;
+  text-align: left;
+}
+/* line 15, ../../dev/sass/partials/modules/_app-cart.scss */
+#cart h3 {
+  border-bottom: 1px solid #222222;
+  padding: 0 0 13.33333px 20px;
+  font-size: 19px;
+  font-size: 1.1875em;
+  line-height: 28.5px;
+}
+/* line 22, ../../dev/sass/partials/modules/_app-cart.scss */
+#cart .cart-item-wrapper {
+  max-height: 500px;
+  overflow-y: scroll;
+  padding-bottom: 71px;
+}
+/* line 29, ../../dev/sass/partials/modules/_app-cart.scss */
+#cart .cart-item {
+  *zoom: 1;
+  padding: 20px 0;
+  border-bottom: 1px solid #222222;
+  position: relative;
+}
+/* line 38, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#cart .cart-item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 36, ../../dev/sass/partials/modules/_app-cart.scss */
+#cart .cart-item .cart-item-left {
+  width: 140px;
+  float: left;
+}
+/* line 42, ../../dev/sass/partials/modules/_app-cart.scss */
+#cart .cart-item .cart-item-right {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 160px;
+  width: 200px;
+}
+/* line 48, ../../dev/sass/partials/modules/_app-cart.scss */
+#cart .cart-item .cart-item-right span {
+  display: block;
+}
+/* line 55, ../../dev/sass/partials/modules/_app-cart.scss */
+#cart .cart-footer {
+  padding: 20px 0 0 0;
+  position: absolute;
+  height: 71px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: white;
+}
+/* line 65, ../../dev/sass/partials/modules/_app-cart.scss */
+#cart .cart-footer span {
+  font-size: 16px;
+  font-size: 1em;
+  line-height: 24px;
+  text-transform: uppercase;
+  line-height: 51px;
+}
+/* line 72, ../../dev/sass/partials/modules/_app-cart.scss */
+#cart .cart-footer input {
+  float: right;
+  padding: 13px 40px;
+  margin: 0;
+}
+
+/* line 5, ../../dev/sass/partials/modules/_app-social.scss */
+.social li {
+  display: inline-block;
+}
+/* line 9, ../../dev/sass/partials/modules/_app-social.scss */
+.social li a {
+  display: block;
+  width: 34px;
+}
+/* line 14, ../../dev/sass/partials/modules/_app-social.scss */
+.social li a:hover {
+  border: 0;
+}
+
+/* line 6, ../../dev/sass/partials/modules/_app-page-with-sidebar.scss */
+#page-with-sidebar .pws-header {
+  background: #e6e7e7;
+  text-align: center;
+  padding: 40px 20px;
+}
+/* line 12, ../../dev/sass/partials/modules/_app-page-with-sidebar.scss */
+#page-with-sidebar .pws-header h1 {
+  font-size: 28px;
+  font-size: 1.75em;
+  line-height: 42px;
+}
+/* line 20, ../../dev/sass/partials/modules/_app-page-with-sidebar.scss */
+#page-with-sidebar .page-wyziwig img {
+  max-width: 500px;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* line 33, ../../dev/sass/partials/modules/_app-page-with-sidebar.scss */
+#pws-sidebar h3 {
+  margin-bottom: 10px;
+}
+/* line 38, ../../dev/sass/partials/modules/_app-page-with-sidebar.scss */
+#pws-sidebar a {
+  text-transform: uppercase;
+  line-height: 29px;
+}
+
 /* line 6, ../../dev/sass/misc/_helpers.scss */
 .block {
   display: block;
@@ -1870,6 +2211,24 @@ table th, table td {
 /* line 64, ../../dev/sass/misc/_helpers.scss */
 .hidden {
   display: none;
+}
+
+@media (min-width: 767px) {
+  /* line 69, ../../dev/sass/misc/_helpers.scss */
+  .hide-large {
+    display: none;
+  }
+}
+
+/* line 77, ../../dev/sass/misc/_helpers.scss */
+.hide-small {
+  display: none;
+}
+@media (min-width: 767px) {
+  /* line 77, ../../dev/sass/misc/_helpers.scss */
+  .hide-small {
+    display: block;
+  }
 }
 
 @media print {

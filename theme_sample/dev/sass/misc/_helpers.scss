@@ -64,7 +64,24 @@
 .hidden {
 
 	display: none;
+}
 
+.hide-large {
+
+	@include breakpoint($tablet) {
+
+		display: none;
+	}
+}
+
+.hide-small {
+
+	display: none;
+
+	@include breakpoint($tablet) {
+
+		display: block;
+	}
 }
 
 // ============================================================

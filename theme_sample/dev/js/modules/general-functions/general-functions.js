@@ -9,9 +9,17 @@ $("#skip-to-content").on("click", function () {
 // Burger
 $('.burger').on("click", function() {
 
-	$(this).parent().find('.sub-nav').slideToggle();
-	console.log("test");
+	$(this).parent().find('.burger-nav').slideToggle();
+	$('#cart').slideUp();
 });
+
+// Cart link
+$('.cart-link').on("click", function() {
+
+	$('#cart').slideToggle();
+	$('.burger-nav').slideUp();
+});
+
 
 // Fitvids
 //$('.video-wrapper').fitVids();

@@ -7,43 +7,47 @@
    <div class="wrapper">
    		<div class="row full">
 	   		<div class="col-sm-4 full">
-	   			<nav class="nav-left">
+	   			<nav class="burger-menu">
+					<a href="javascript:;" class="burger">
+						<i class="top"></i>
+						<i class="middle"></i>
+						<i class="bottom"></i>
+					</a>
+					<ul class="burger-nav">
+						<li>
+							<a href="about.php">About</a>
+						</li>
+						<li>
+							<a href="vip.php">VIP Members</a>
+						</li>
+						<li>
+							<a href="customercare.php">Customer Care</a>
+						</li>
+						<li>
+							<a href="page-with-sidebar.php">Shipping &amp; Returns</a>
+						</li>
+						<li>
+							<a href="page-with-sidebar.php">Fit &amp; Size Guide</a>
+						</li>
+						<li>
+							<a href="page-with-sidebar.php">Gift Cards</a>
+						</li>
+						<li>
+							<a href="/">$USD | United States</a>
+						</li>
+						<li>
+							<a href="page-with-sidebar.php">Contact Us</a>
+						</li>
+						<li>
+							<a href="page-with-sidebar.php">Terms of Use</a>
+						</li>
+						<li>
+							<a href="page-with-sidebar.php">Privacy Policy</a>
+						</li>
+					</ul>
+	   			</nav>
+	   			<nav class="nav-left visible-nav">
 	   				<ul>
-	   					<li>
-	   						<a href="javascript:;" class="burger">B</a>
-	   						<ul class="sub-nav">
-	   							<li>
-	   								<a href="about.php">About</a>
-	   							</li>
-	   							<li>
-	   								<a href="vip.php">VIP Members</a>
-	   							</li>
-	   							<li>
-	   								<a href="customercare.php">Customer Care</a>
-	   							</li>
-	   							<li>
-	   								<a href="shipping.php">Shipping &amp; Returns</a>
-	   							</li>
-	   							<li>
-	   								<a href="sizeguide.php">Fit &amp; Size Guide</a>
-	   							</li>
-	   							<li>
-	   								<a href="giftcards.php">Gift Cards</a>
-	   							</li>
-	   							<li>
-	   								<a href="/">$USD | United States</a>
-	   							</li>
-	   							<li>
-	   								<a href="contact.php">Contact Us</a>
-	   							</li>
-	   							<li>
-	   								<a href="terms.php">Terms of Use</a>
-	   							</li>
-	   							<li>
-	   								<a href="privacypolicy.php">Privacy Policy</a>
-	   							</li>
-	   						</ul>
-	   					</li>
 	   					<li>
 	   						<a href="collection.php">Shop</a>
 	   					</li>
@@ -62,7 +66,7 @@
 	   			</a>
 	   		</div>
 	   		<div class="col-sm-4 full">
-	   			<nav class="nav-right">
+	   			<nav class="nav-right visible-nav">
 	   				<ul>
 	   					<li>
 	   						<a href="help.php">Help</a>
@@ -74,11 +78,17 @@
 	   						<a href="account.php">Sign in</a>
 	   					</li>
 	   					<li>
-	   						<a href="cart.php">cart</a>
+	   						<a href="javascript:;" class="cart-link">cart</a>
+	   						<?php include('partials/pages/page-partials/cart.php');?>
 	   					</li>
 	   				</ul>
 	   			</nav>
 	   		</div>
+   		</div>
+   		<div class="tagline-mobile hide-large">
+   			<span>Free Shipping</span>
+   			<span>|</span>
+   			<span>Become a VIP</span>
    		</div>
    </div>
 </header>
