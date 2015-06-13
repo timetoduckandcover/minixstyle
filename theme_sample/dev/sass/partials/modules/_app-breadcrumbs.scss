@@ -2,7 +2,24 @@
 
 .breadcrumbs {
 
-	margin-bottom: $baseline;
+	margin-bottom: $baseline/2;
+
+	@include breakpoint($tablet) {
+
+		margin-bottom: $baseline;
+	}
+
+	&.alt {
+
+		padding: $baseline 25px $baseline/2 25px;
+		border-bottom: 1px solid $col-black;
+
+		@include breakpoint($tablet) {
+
+			border: none;
+			padding: 0 25px;
+		}
+	}
 
 	ul {
 

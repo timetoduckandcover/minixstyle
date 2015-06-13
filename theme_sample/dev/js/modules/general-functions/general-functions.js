@@ -1,5 +1,12 @@
 
 
+// Flexslider
+$('.flexslider').flexslider({
+	slideshow: false,
+	animation: 'slide'
+});
+
+
 // Skip to content fix for chrome
 $("#skip-to-content").on("click", function () {
 
@@ -40,10 +47,6 @@ function getSubNavHeight() {
 getSubNavHeight();
 
 
-
-
 // Fitvids
 //$('.video-wrapper').fitVids();
 
-// Flexslider
-//$('.flexslider').flexslider();

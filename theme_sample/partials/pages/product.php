@@ -1,10 +1,11 @@
 
 <form action="">
-	<div class="header-push less">
+	<div class="header-push product">
 		<div id="product">
-			<div class="wrapper padding">
 
-				<?php include('partials/pages/page-partials/breadcrumbs.php');?>
+			<?php include('partials/pages/page-partials/breadcrumbs-alt.php');?>
+
+			<div class="wrapper padding">
 
 				<div class="row">
 
@@ -41,7 +42,19 @@
 
 					<!-- Main product image -->
 					<div class="col-xs-12 col-md-6 product-main-image">
-						<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
+								</li>
+								<li>
+									<img src="assets/img/products/oh-my-kids.png" alt="Product Image" class="img-full" />
+								</li>
+								<li>
+									<img src="assets/img/products/akid.jpeg" alt="Product Image" class="img-full" />
+								</li>
+							</ul>
+						</div>
 					</div>
 
 					<!-- Product details -->

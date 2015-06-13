@@ -100,7 +100,12 @@
 
 						&.sold-out {
 
-							background: $col-darkgrey;
+							background: $col-lightgrey;
+
+							@include breakpoint($tablet) {
+
+								background: $col-darkgrey;
+							}
 
 							&:hover {
 

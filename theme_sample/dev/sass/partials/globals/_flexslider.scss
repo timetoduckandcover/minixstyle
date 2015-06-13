@@ -1,0 +1,52 @@
+
+.flexslider {
+
+	position: relative;
+	padding-bottom: $baseline*3;
+
+	.slides {
+
+		@include cf;
+	}
+
+	.flex-direction-nav {
+
+		@include centre(y);
+		z-index: 5555;
+		width: 100%;
+		margin-top: -$baseline*3;
+	}
+
+	.flex-control-nav {
+
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+
+		li {
+
+			display: inline-block;
+			margin: 0 $baseline/4;
+
+			a {
+
+				display: block;
+				text-indent: -99999px;
+				background: $col-white;
+				@include border-radius(50%);
+				width: 15px;
+				height: 15px;
+				border: 1px solid $col-black;
+
+				&.flex-active,
+				&:hover {
+
+					background: $col-black;
+				}
+			}
+		}
+	}
+}
+

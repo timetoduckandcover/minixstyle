@@ -61,6 +61,16 @@ body {
 
 		padding: $baseline 0;
 	}
+
+	&.product {
+
+		padding: 0;
+
+		@include breakpoint($tablet) {
+
+			padding: $baseline 0;
+		}
+	}
 }
 
 #skip-to-content {

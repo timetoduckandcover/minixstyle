@@ -6,6 +6,12 @@
 <div class="header-push less">
 	<div id="collection">
 		<div class="wrapper padding">
+			<?php include('partials/pages/page-partials/breadcrumbs.php');?>
+			<div class="row">
+				<div class="col-xs-12">
+					<h1 class="gamma hide-large">Collection Title</h1>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-xs-12 col-md-3 hide-small">
 					<?php include('partials/pages/page-partials/collection-sidebar.php');?>

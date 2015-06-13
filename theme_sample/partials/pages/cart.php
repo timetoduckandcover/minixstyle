@@ -3,12 +3,14 @@
 	<div id="cart-page">
 		<div class="wrapper padding">
 			<div class="row mb">
-				<div class="col-xs-12 col-md-6">
+				<div class="col-xs-12 col-md-6 mb">
 					<h1 class="beta">Shopping bag</h1>
 				</div>
-				<div class="col-xs-12 col-md-6">
-					<a href="/collection.php">Continue to shopping</a>
-					<a href="/checkout.php" class="btn">Checkout</a>
+				<div class="col-xs-12 col-md-6 mb">
+					<div class="cart-header-cta">
+						<a href="/collection.php">Continue to shopping</a>
+						<a href="/checkout.php" class="btn">Checkout</a>
+					</div>
 				</div>
 			</div>
 
@@ -83,11 +85,21 @@
 			<!-- Cart footer -->
 			<div class="cart-footer">
 				<div class="row">
-					<div class="col-xs-12 col-md-7">
+					<div class="col-xs-12 col-md-7 cart-footer-vip">
 						<img src="assets/img/banners/vip_cart_banner.jpg" alt="VIP Banner"  class="img-full" />
 					</div>
-					<div class="col-xs-12 col-md-5">
-						right
+					<div class="col-xs-12 col-md-5 cart-footer-checkout-btn">
+						<div class="cart-footer-checkout-btn-inner">
+							<span class="cart-footer-titles">
+								<span class="store-credit-title">Store Credit:</span> 
+								<span class="subtotal-title">Subtotal:</span>
+							</span>
+							<span class="cart-footer-values">
+								<span class="store-credit-value">-0.00</span> 
+								<span class="subtotal-value">$53.00</span>
+							</span>
+							<a href="/checkout.php" class="btn checkout-btn">Checkout</a>
+						</div>
 					</div>
 				</div>
 			</div>
