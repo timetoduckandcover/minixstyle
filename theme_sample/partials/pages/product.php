@@ -13,28 +13,18 @@
 					<div class="col-xs-12 col-md-1 product-thumbnails hide-small">
 						<ul>
 							<li>
-								<a href="javascript:;" class="product-thumbnail">
+								<a href="javascript:;" class="product-thumbnail" data-index="0">
 									<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
 								</a>
 							</li>
 							<li>
-								<a href="javascript:;" class="product-thumbnail">
-									<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
+								<a href="javascript:;" class="product-thumbnail" data-index="1">
+									<img src="assets/img/products/oh-my-kids.png" alt="Product Image" class="img-full" />
 								</a>
 							</li>
 							<li>
-								<a href="javascript:;" class="product-thumbnail">
-									<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;" class="product-thumbnail">
-									<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
-								</a>
-							</li>
-							<li>
-								<a href="javascript:;" class="product-thumbnail">
-									<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />
+								<a href="javascript:;" class="product-thumbnail" data-index="2">
+									<img src="assets/img/products/akid.jpeg" alt="Product Image" class="img-full" />
 								</a>
 							</li>
 						</ul>

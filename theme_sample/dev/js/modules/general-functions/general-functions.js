@@ -2,8 +2,16 @@
 
 // Flexslider
 $('.flexslider').flexslider({
+
 	slideshow: false,
 	animation: 'slide'
+});
+
+$('.product-thumbnails li a').on("click", function () {
+
+	var dataIndex = parseInt($(this).attr('data-index'));
+
+    $('.flexslider').flexslider(dataIndex);
 });
 
 

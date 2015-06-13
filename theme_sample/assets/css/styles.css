@@ -1532,12 +1532,12 @@ table th, table td {
   width: 25%;
 }
 
-/* line 2, ../../dev/sass/partials/globals/_flexslider.scss */
+/* line 4, ../../dev/sass/partials/globals/_flexslider.scss */
 .flexslider {
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
-/* line 7, ../../dev/sass/partials/globals/_flexslider.scss */
+/* line 9, ../../dev/sass/partials/globals/_flexslider.scss */
 .flexslider .slides {
   *zoom: 1;
 }
@@ -1547,7 +1547,7 @@ table th, table td {
   display: table;
   clear: both;
 }
-/* line 12, ../../dev/sass/partials/globals/_flexslider.scss */
+/* line 14, ../../dev/sass/partials/globals/_flexslider.scss */
 .flexslider .flex-direction-nav {
   position: absolute;
   top: 50%;
@@ -1558,22 +1558,91 @@ table th, table td {
   transform: translateY(-50%);
   z-index: 5555;
   width: 100%;
-  margin-top: -60px;
+  margin-top: -40px;
+  display: none;
 }
-/* line 20, ../../dev/sass/partials/globals/_flexslider.scss */
+@media (min-width: 767px) {
+  /* line 14, ../../dev/sass/partials/globals/_flexslider.scss */
+  .flexslider .flex-direction-nav {
+    display: block;
+  }
+}
+/* line 27, ../../dev/sass/partials/globals/_flexslider.scss */
+.flexslider .flex-direction-nav a {
+  display: block;
+}
+/* line 33, ../../dev/sass/partials/globals/_flexslider.scss */
+.flexslider .flex-direction-nav .flex-nav-prev,
+.flexslider .flex-direction-nav .flex-nav-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-indent: -999999px;
+}
+/* line 39, ../../dev/sass/partials/globals/_flexslider.scss */
+.flexslider .flex-direction-nav .flex-nav-prev a,
+.flexslider .flex-direction-nav .flex-nav-next a {
+  display: block;
+  width: 30px;
+  height: 50px;
+  background-image: url(../img/theme/sprite.png);
+  background-repeat: no-repeat;
+  background-size: 60px 50px;
+}
+/* line 48, ../../dev/sass/partials/globals/_flexslider.scss */
+.flexslider .flex-direction-nav .flex-nav-prev a:hover,
+.flexslider .flex-direction-nav .flex-nav-next a:hover {
+  border: none;
+}
+/* line 55, ../../dev/sass/partials/globals/_flexslider.scss */
+.flexslider .flex-direction-nav .flex-nav-prev {
+  left: 4px;
+}
+/* line 59, ../../dev/sass/partials/globals/_flexslider.scss */
+.flexslider .flex-direction-nav .flex-nav-prev:hover {
+  left: 10px;
+}
+/* line 65, ../../dev/sass/partials/globals/_flexslider.scss */
+.flexslider .flex-direction-nav .flex-nav-next {
+  right: 4px;
+}
+/* line 69, ../../dev/sass/partials/globals/_flexslider.scss */
+.flexslider .flex-direction-nav .flex-nav-next:hover {
+  right: 10px;
+}
+/* line 74, ../../dev/sass/partials/globals/_flexslider.scss */
+.flexslider .flex-direction-nav .flex-nav-next a {
+  background-position: -30px 0;
+}
+/* line 81, ../../dev/sass/partials/globals/_flexslider.scss */
 .flexslider .flex-control-nav {
+  display: block;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   text-align: center;
 }
-/* line 28, ../../dev/sass/partials/globals/_flexslider.scss */
+@media (min-width: 767px) {
+  /* line 81, ../../dev/sass/partials/globals/_flexslider.scss */
+  .flexslider .flex-control-nav {
+    display: none;
+  }
+}
+/* line 95, ../../dev/sass/partials/globals/_flexslider.scss */
 .flexslider .flex-control-nav li {
   display: inline-block;
   margin: 0 5px;
 }
-/* line 33, ../../dev/sass/partials/globals/_flexslider.scss */
+/* line 100, ../../dev/sass/partials/globals/_flexslider.scss */
 .flexslider .flex-control-nav li a {
   display: block;
   text-indent: -99999px;
@@ -1587,7 +1656,7 @@ table th, table td {
   height: 15px;
   border: 1px solid #222222;
 }
-/* line 44, ../../dev/sass/partials/globals/_flexslider.scss */
+/* line 111, ../../dev/sass/partials/globals/_flexslider.scss */
 .flexslider .flex-control-nav li a.flex-active, .flexslider .flex-control-nav li a:hover {
   background: #222222;
 }
