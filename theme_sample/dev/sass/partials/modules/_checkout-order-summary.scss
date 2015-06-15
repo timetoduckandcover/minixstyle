@@ -1,0 +1,46 @@
+
+.checkout-order-summary {
+
+	background: $col-lightgrey;
+	padding: $baseline/2 $baseline/1.5;
+
+	.order-summary-items {
+
+		li {
+
+			display: block;
+			border-bottom: 1px solid $col-darkgrey;
+			@include cf;
+			padding: $baseline/2;
+
+			img {
+
+				width: 80px;
+				height: auto;
+				display: block;
+				float: left;
+			}
+
+			.order-summary-details {
+
+				float: left;
+				@include cf;
+
+				.order-summary-item-title {
+
+					float: left;
+
+					span {
+
+						display: block;
+					}
+				}
+
+				.order-summary-item-price {
+
+					float: right;
+				}
+			}
+		}
+	}
+}

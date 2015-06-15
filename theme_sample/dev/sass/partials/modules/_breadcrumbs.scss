@@ -54,3 +54,44 @@
 		}
 	}
 }
+
+.breadcrumbs-checkout {
+
+	text-align: center;
+
+	li {
+
+		display: inline-block;
+		color: $col-darkgrey;
+		text-transform: uppercase;
+		margin-right: $baseline;
+
+		&.active {
+
+			color: $col-black;
+
+			&:after {
+
+				color: $col-darkgrey;
+			}
+		}
+
+		&:after {
+
+			content: '>';
+			padding-left: $baseline;
+		}
+
+		&:last-child {
+
+			margin-right: 0;
+
+			&:after {
+
+				content: '';
+				padding-left: 0;
+			}
+		}
+	}
+}
+

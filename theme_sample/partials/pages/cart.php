@@ -9,7 +9,7 @@
 				<div class="col-xs-12 col-md-6 mb">
 					<div class="cart-header-cta">
 						<a href="/collection.php">Continue to shopping</a>
-						<a href="/checkout.php" class="btn">Checkout</a>
+						<a href="/checkout-shipping.php" class="btn">Checkout</a>
 					</div>
 				</div>
 			</div>
@@ -98,7 +98,7 @@
 								<span class="store-credit-value">-0.00</span> 
 								<span class="subtotal-value">$53.00</span>
 							</span>
-							<a href="/checkout.php" class="btn checkout-btn">Checkout</a>
+							<a href="/checkout-shipping.php" class="btn checkout-btn">Checkout</a>
 						</div>
 					</div>
 				</div>

@@ -1,6 +1,6 @@
 
 
-<div id="cart">
+<div class="cart-quickview">
 	<h3>Your Bag (2)</h3>
 	<div class="cart-item-wrapper">
 		<div class="cart-item">

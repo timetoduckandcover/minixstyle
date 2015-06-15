@@ -12,17 +12,27 @@ a {
 	@include transition(all .2s ease-in-out);
 	border-bottom: 2px solid transparent;
 
-	&:link {
+	&.underline {
 
-		text-decoration: none;
-		border: 0;
+		text-decoration: underline;
 	}
 
-	&:visited {
+	&.upper {
 
-		text-decoration: none;
-		border: 0;
+		text-transform: uppercase;
 	}
+
+	// &:link {
+
+	// 	text-decoration: none;
+	// 	border: 0;
+	// }
+
+	// &:visited {
+
+	// 	text-decoration: none;
+	// 	border: 0;
+	// }
 
 	&:hover {
 
