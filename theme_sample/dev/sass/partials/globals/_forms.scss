@@ -116,6 +116,37 @@ input[type="submit"] {
 	}
 }
 
+input[type="radio"],
+input[type="checkbox"] {
+
+	position: relative;
+
+	&:before {
+
+		content: '';
+		background: $col-white;
+		width: 21px;
+		height: 22px;
+		position: absolute;
+		z-index: 9;
+		background-image: url(../img/theme/radio-checkbox.png);
+		background-repeat: no-repeat;
+		background-size: 42px 21px;
+		background-position: -21px 0;
+		top: -4px;
+  		left: -1px;
+	}
+
+	&:checked {
+
+		&:before {
+
+			background-position: 0 0;
+		}
+	}
+}
+
+
 // Select dropdowns with div wrapper
 .styled-select  {
 

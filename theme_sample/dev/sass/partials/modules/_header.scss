@@ -2,9 +2,7 @@
 // HEADER 
 // ============================================================
 
-$burger-push: $baseline+55px;
 $header-height: $baseline*3;
-
 
 .global-header {
 
@@ -30,7 +28,7 @@ $header-height: $baseline*3;
 	}
 
 	// General nav styles
-	nav.visible-nav {
+	.visible-nav {
 
 		& > ul {
 
@@ -86,10 +84,10 @@ $header-height: $baseline*3;
 					left: 0;
 					right: 0;
 
-					.header-left-push {
+					// .header-left-push {
 
-						padding: $baseline $baseline $baseline*2 $burger-push;
-					}
+					// 	padding: $baseline $baseline $baseline*2 $burger-push;
+					// }
 
 					.sub-nav-list {
 
@@ -131,7 +129,8 @@ $header-height: $baseline*3;
 	// Left nav
 	.nav-left {
 
-		padding-left: $burger-push;
+		position: absolute;
+		left: $baseline*4;
 
 		ul {
 
@@ -141,7 +140,7 @@ $header-height: $baseline*3;
 
 				@media all and(min-width:1000px) {
 
-					margin-right: $baseline*1.5;
+					margin-right: $baseline;
 				}
 			}
 		}
@@ -150,7 +149,10 @@ $header-height: $baseline*3;
 	// Right nav
 	.nav-right {
 
-		padding-right: $baseline;
+		padding-right: $baseline*3;
+		position: absolute;
+		right: $baseline;
+		top: 0;
 
 		& > ul {
 
@@ -162,7 +164,7 @@ $header-height: $baseline*3;
 
 				@media all and(min-width:1000px) {
 
-					margin-right: $baseline*1.5;
+					margin-left: $baseline;
 				}
 
 				&.cart-link {
@@ -176,6 +178,27 @@ $header-height: $baseline*3;
 					}
 				}
 			}
+		}
+	}
+
+	.cart-link {
+
+		position: absolute !important;
+		top: 15px;
+		right: 0;
+
+		&:hover a {
+
+			border: 0 !important;
+		}
+
+		a {
+
+			background-image: url(../img/theme/cart-icon.png);
+			background-repeat: no-repeat;
+			width: 26px;
+			height: 46px;
+			background-size: 26px 26px;
 		}
 	}
 
@@ -212,7 +235,8 @@ $header-height: $baseline*3;
 // Burger button & menu
 .burger-menu {
 
-	float: left;
+	position: absolute;
+	left: 0;
 	padding: 16px 0 0 $baseline;
 
 	@include breakpoint($tablet) {

@@ -3,6 +3,12 @@
 
 	background: $col-lightgrey;
 	padding: $baseline/2 $baseline/1.5;
+	margin-top: $baseline;
+
+	@include breakpoint($tablet) {
+
+		margin-top: 0;
+	}
 
 	.order-summary-items {
 

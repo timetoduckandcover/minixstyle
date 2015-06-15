@@ -15,7 +15,6 @@ $includeBorderBox: true;
 	*, *:before, *:after {
 
 		@include box-sizing(border-box);
-
 	}
 
 }
@@ -44,7 +43,6 @@ body {
 	@if $containerCentering {
 
 		margin: 0 auto;
-		
 	}
 
 	&.padding {

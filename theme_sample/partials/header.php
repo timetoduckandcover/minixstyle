@@ -8,7 +8,7 @@
 
    		<!-- Desktop header -->
    		<div class="row full hide-small desktop-header">
-	   		<div class="col-xs-3 col-sm-4 full">
+
 	   			<nav class="burger-menu desktop">
 					<a href="javascript:;" class="burger">
 						<i class="top"></i>
@@ -48,6 +48,7 @@
 						</li>
 					</ul>
 	   			</nav>
+	   			
 	   			<nav class="nav-left visible-nav">
 	   				<ul>
 	   					<li class="has-sub-nav">
@@ -62,13 +63,11 @@
 	   					</li>
 	   				</ul>
 	   			</nav>
-	   		</div>
-	   		<div class="col-xs-4 full">
+
 	   			<a href="/" class="logo">
 	   				<img src="assets/img/theme/logo.png" alt="Mini X Logo" class="img-full" />
 	   			</a>
-	   		</div>
-	   		<div class="col-xs-4 full">
+
 	   			<nav class="nav-right visible-nav">
 	   				<ul>
 	   					<li>
@@ -80,13 +79,13 @@
 	   					<li>
 	   						<a href="account.php">Sign in</a>
 	   					</li>
-	   					<li class="cart-link sprite">
-	   						<a href="/cart.php">cart</a>
+	   					<li class="cart-link">
+	   						<a href="/cart.php"></a>
 	   						<?php include('partials/pages/page-partials/cart-quickview.php');?>
 	   					</li>
 	   				</ul>
 	   			</nav>
-	   		</div>
+
    		</div>
    		
    		<!-- Mobile header -->
@@ -144,7 +143,7 @@
    				<img src="assets/img/theme/logo.png" alt="Mini X Logo" class="img-full" />
    			</a>
    			<div class="cart-link sprite">
-				<a href="/cart.php">cart</a>
+				<a href="/cart.php"></a>
 				<?php include('partials/pages/page-partials/cart-quickview.php');?>
 			</div>
    		</div>

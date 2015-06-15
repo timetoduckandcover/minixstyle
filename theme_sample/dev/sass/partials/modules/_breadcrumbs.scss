@@ -11,13 +11,25 @@
 
 	&.alt {
 
-		padding: $baseline 25px $baseline/2 25px;
+		padding: $baseline 25px;
 		border-bottom: 1px solid $col-black;
 
 		@include breakpoint($tablet) {
 
 			border: none;
 			padding: 0 25px;
+		}
+
+		ul {
+
+			margin: 0 auto;
+			width: 100%;
+			max-width: $containerWidth;
+
+			@include breakpoint($tablet) {
+
+				padding: 0 $baseline;
+			}
 		}
 	}
 
