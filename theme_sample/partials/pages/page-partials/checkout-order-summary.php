@@ -26,5 +26,9 @@
 				</div>
 			</div>
 		</li>
-	</ul>		
+	</ul>	
+	<div class="promo-gift-card">
+		<input type="text" placeholder="Promo / Gift Card" />
+		<a href="javascript:;" class="upper underline apply-promo-gift-card">Apply now</a>
+	</div>	
 </div>

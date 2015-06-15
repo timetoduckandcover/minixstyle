@@ -84,6 +84,11 @@ input[type="submit"] {
 		padding: $baseline/3 $baseline*2.5;
 	}
 
+	&.large {
+
+		padding: $baseline/2 $baseline*3 8px $baseline*3;
+	}
+
 	&:hover {
 
 		color: $primaryBtnColHover;

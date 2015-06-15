@@ -356,6 +356,12 @@ input[type="submit"].cta {
   padding: 6.66667px 50px;
 }
 /* line 87, ../../dev/sass/partials/globals/_forms.scss */
+.btn.large,
+button.large,
+input[type="submit"].large {
+  padding: 10px 60px 8px 60px;
+}
+/* line 92, ../../dev/sass/partials/globals/_forms.scss */
 .btn:hover,
 button:hover,
 input[type="submit"]:hover {
@@ -364,28 +370,28 @@ input[type="submit"]:hover {
   text-decoration: none;
   border: 1px solid #6ee1cd !important;
 }
-/* line 95, ../../dev/sass/partials/globals/_forms.scss */
+/* line 100, ../../dev/sass/partials/globals/_forms.scss */
 .btn.secondary,
 button.secondary,
 input[type="submit"].secondary {
   background: #2b78c4;
   color: white;
 }
-/* line 100, ../../dev/sass/partials/globals/_forms.scss */
+/* line 105, ../../dev/sass/partials/globals/_forms.scss */
 .btn.secondary:hover,
 button.secondary:hover,
 input[type="submit"].secondary:hover {
   color: white;
   background: #c4c416;
 }
-/* line 107, ../../dev/sass/partials/globals/_forms.scss */
+/* line 112, ../../dev/sass/partials/globals/_forms.scss */
 .btn:hover,
 button:hover,
 input[type="submit"]:hover {
   cursor: pointer;
 }
 
-/* line 115, ../../dev/sass/partials/globals/_forms.scss */
+/* line 120, ../../dev/sass/partials/globals/_forms.scss */
 .styled-select {
   width: 100%;
   height: 44px;
@@ -397,7 +403,7 @@ input[type="submit"]:hover {
   border: 1px solid #aaa9a9;
   margin-bottom: 10px;
 }
-/* line 127, ../../dev/sass/partials/globals/_forms.scss */
+/* line 132, ../../dev/sass/partials/globals/_forms.scss */
 .styled-select select {
   background: transparent;
   width: 100%;
@@ -2672,12 +2678,8 @@ table th, table td {
 #checkout-shipping .shipping-options label {
   margin-left: 10px;
 }
-/* line 82, ../../dev/sass/partials/modules/_checkout-shipping.scss */
-#checkout-shipping .continue-to-payment a {
-  padding: 10px 50px 8px 50px;
-}
 
-/* line 92, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 84, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper {
   position: fixed;
   top: 0;
@@ -2688,7 +2690,7 @@ table th, table td {
   z-index: 9999999;
   display: none;
 }
-/* line 103, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 95, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card {
   position: absolute;
   top: 50%;
@@ -2705,38 +2707,38 @@ table th, table td {
   text-align: center;
   padding: 30px 100px;
 }
-/* line 113, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 105, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card h2 {
   margin-bottom: 10px;
 }
-/* line 118, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 110, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card span {
   margin: 20px 0;
 }
-/* line 123, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 115, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card .btn {
   padding: 10px 50px 8px 50px;
 }
-/* line 129, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 121, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card-back {
   display: none;
 }
-/* line 133, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 125, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card-back .gift-card-details {
   text-align: left !important;
 }
-/* line 137, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 129, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card-back .gift-card-details label {
   font-family: "GibsonSemiBold", arial, sans-serif;
   text-transform: uppercase;
   text-indent: 10px;
   display: block;
 }
-/* line 145, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 137, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card-back .gift-card-details li {
   position: relative;
 }
-/* line 149, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 141, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card-back .gift-card-details li .gift-card-textarea-msg {
   position: absolute;
   right: 30px;
@@ -2746,19 +2748,19 @@ table th, table td {
   line-height: 19.5px;
   color: #e6e7e7;
 }
-/* line 160, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 152, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card-back textarea {
   resize: none;
   height: 170px;
   min-height: 1px;
 }
-/* line 167, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 159, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card-back .btn {
   margin-top: 40px;
 }
 
-/* line 7, ../../dev/sass/partials/modules/_checkout-payment.scss */
-#checkout-payment .payment-details h2 {
+/* line 5, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment h2 {
   margin-bottom: 10px;
 }
 /* line 16, ../../dev/sass/partials/modules/_checkout-payment.scss */
@@ -2806,19 +2808,86 @@ table th, table td {
   background: #c97386;
 }
 /* line 58, ../../dev/sass/partials/modules/_checkout-payment.scss */
-#checkout-payment .payment-details li {
+#checkout-payment .payment-details .new-billing-profile-link {
+  line-height: 60px;
+}
+/* line 63, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .payment-details .new-billing-profile {
+  display: none;
+}
+/* line 69, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .payment-details .new-billing-profile li.new-billing-profile-item {
+  margin-top: 20px;
+}
+/* line 73, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .payment-details .new-billing-profile li.new-billing-profile-item label {
+  margin-bottom: 10px;
+  display: block;
+}
+/* line 79, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .payment-details .new-billing-profile li.new-billing-profile-item .expiry-wrapper {
   *zoom: 1;
 }
 /* line 38, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-#checkout-payment .payment-details li:after {
+#checkout-payment .payment-details .new-billing-profile li.new-billing-profile-item .expiry-wrapper:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 62, ../../dev/sass/partials/modules/_checkout-payment.scss */
-#checkout-payment .payment-details li .expiry-holder {
-  width: 33.33%;
+/* line 83, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .payment-details .new-billing-profile li.new-billing-profile-item .expiry-wrapper .expiry-holder {
+  width: 30%;
   float: left;
+  margin-right: 5%;
+}
+/* line 89, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .payment-details .new-billing-profile li.new-billing-profile-item .expiry-wrapper .expiry-holder:last-child {
+  margin-right: 0;
+}
+/* line 100, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .billing-address-area {
+  margin-top: 20px;
+}
+/* line 104, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .billing-address-area .billing-address-question {
+  border: 1px solid #aaa9a9;
+  height: 44px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+/* line 111, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .billing-address-area .billing-address-question label {
+  padding-left: 10px;
+}
+/* line 117, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .billing-address-area .same-as-shipping-address {
+  display: none;
+  border: 1px solid #aaa9a9;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+/* line 124, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .billing-address-area .same-as-shipping-address span {
+  display: block;
+}
+
+/* line 4, ../../dev/sass/partials/modules/_checkout-confirmation.scss */
+#checkout-confirmation h2 {
+  margin-bottom: 10px;
+}
+/* line 9, ../../dev/sass/partials/modules/_checkout-confirmation.scss */
+#checkout-confirmation .btn {
+  margin-top: 20px;
+}
+/* line 14, ../../dev/sass/partials/modules/_checkout-confirmation.scss */
+#checkout-confirmation .confirmation-new-arrivals {
+  border-top: 1px solid #aaa9a9;
+  margin-top: 60px;
+  padding-top: 40px;
+}
+/* line 20, ../../dev/sass/partials/modules/_checkout-confirmation.scss */
+#checkout-confirmation .confirmation-new-arrivals h3 {
+  text-align: center;
 }
 
 /* line 2, ../../dev/sass/partials/modules/_checkout-order-summary.scss */
@@ -2868,6 +2937,27 @@ table th, table td {
 /* line 39, ../../dev/sass/partials/modules/_checkout-order-summary.scss */
 .checkout-order-summary .order-summary-items li .order-summary-details .order-summary-item-price {
   float: right;
+}
+/* line 47, ../../dev/sass/partials/modules/_checkout-order-summary.scss */
+.checkout-order-summary .promo-gift-card {
+  position: relative;
+}
+/* line 51, ../../dev/sass/partials/modules/_checkout-order-summary.scss */
+.checkout-order-summary .promo-gift-card input {
+  padding-right: 120px;
+}
+/* line 55, ../../dev/sass/partials/modules/_checkout-order-summary.scss */
+.checkout-order-summary .promo-gift-card input.active {
+  border: 2px solid #6ee1cd;
+}
+/* line 61, ../../dev/sass/partials/modules/_checkout-order-summary.scss */
+.checkout-order-summary .promo-gift-card a {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 14px;
+  font-size: 0.875em;
+  line-height: 21px;
 }
 
 /* line 6, ../../dev/sass/partials/modules/_page-with-sidebar.scss */

@@ -43,4 +43,29 @@
 			}
 		}
 	}
+
+	.promo-gift-card {
+
+		position: relative;
+
+		input {
+
+			padding-right: $baseline*6;
+
+			&.active {
+
+				border: 2px solid $col-lime;
+			}
+		}
+
+		a {
+
+			position: absolute;
+			top: 12px;
+			right: $baseline;
+			@include font(14);
+		}
+	}
 }
+
+

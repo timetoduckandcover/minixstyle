@@ -2,12 +2,12 @@
 
 #checkout-payment {
 
+	h2 {
+
+		margin-bottom: $baseline/2;
+	}
+
 	.payment-details {
-
-		h2 {
-
-			margin-bottom: $baseline/2;
-		}
 
 		.payment-type {
 
@@ -55,14 +55,75 @@
 			}
 		}
 
-		li {
+		.new-billing-profile-link {
 
-			@include cf;
+			line-height: $baseline*3;
+		}
 
-			.expiry-holder {
+		.new-billing-profile {
 
-				width: 33.33%;
-				float: left;
+			display: none;
+
+			li {
+
+				&.new-billing-profile-item {
+
+					margin-top: $baseline;
+
+					label {
+
+						margin-bottom: $baseline/2;
+						display: block;
+					}
+
+					.expiry-wrapper {
+
+						@include cf;
+
+						.expiry-holder {
+
+							width: 30%;
+							float: left;
+							margin-right: 5%;
+
+							&:last-child {
+
+								margin-right: 0;
+							}
+						}
+					}		
+				}
+			}
+		}
+	}
+
+	.billing-address-area {
+
+		margin-top: $baseline;
+
+		.billing-address-question {
+
+			border: 1px solid $col-darkgrey;
+			height: 44px;
+			padding: $baseline/2;
+			margin-bottom: $baseline/2;
+
+			label {
+
+				padding-left: $baseline/2;
+			}
+		}
+
+		.same-as-shipping-address {
+
+			display: none;
+			border: 1px solid $col-darkgrey;
+			padding: $baseline/2;
+			margin-bottom: $baseline;
+
+			span {
+
+				display: block;
 			}
 		}
 	}
