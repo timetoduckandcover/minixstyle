@@ -393,7 +393,7 @@ input[type="submit"]:hover {
   background-image: url(../img/theme/arrow_down.png);
   background-repeat: no-repeat;
   background-size: 18px 12px;
-  background-position: 97% 15px;
+  background-position: 97% 16px;
   border: 1px solid #aaa9a9;
   margin-bottom: 10px;
 }
@@ -2648,24 +2648,36 @@ table th, table td {
 #checkout-shipping .shipping-gift {
   margin-bottom: 40px;
 }
-/* line 49, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 47, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+#checkout-shipping .shipping-gift .shipping-gift-true ul li {
+  margin-bottom: 10px;
+}
+/* line 51, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 #checkout-shipping .shipping-gift .shipping-gift-true ul li .title {
   text-transform: uppercase;
 }
-/* line 54, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 56, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 #checkout-shipping .shipping-gift .shipping-gift-true ul li .message {
   display: block;
 }
-/* line 63, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 61, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+#checkout-shipping .shipping-gift .shipping-gift-true ul li .edit-gift-card {
+  margin-right: 10px;
+}
+/* line 70, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 #checkout-shipping .shipping-options {
   margin-bottom: 20px;
 }
-/* line 67, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 74, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 #checkout-shipping .shipping-options label {
   margin-left: 10px;
 }
+/* line 82, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+#checkout-shipping .continue-to-payment a {
+  padding: 10px 50px 8px 50px;
+}
 
-/* line 77, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 92, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper {
   position: fixed;
   top: 0;
@@ -2676,7 +2688,7 @@ table th, table td {
   z-index: 9999999;
   display: none;
 }
-/* line 88, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 103, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card {
   position: absolute;
   top: 50%;
@@ -2693,38 +2705,38 @@ table th, table td {
   text-align: center;
   padding: 30px 100px;
 }
-/* line 98, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 113, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card h2 {
   margin-bottom: 10px;
 }
-/* line 103, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 118, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card span {
   margin: 20px 0;
 }
-/* line 108, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 123, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card .btn {
   padding: 10px 50px 8px 50px;
 }
-/* line 114, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 129, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card-back {
   display: none;
 }
-/* line 118, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 133, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card-back .gift-card-details {
   text-align: left !important;
 }
-/* line 122, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 137, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card-back .gift-card-details label {
   font-family: "GibsonSemiBold", arial, sans-serif;
   text-transform: uppercase;
   text-indent: 10px;
   display: block;
 }
-/* line 130, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 145, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card-back .gift-card-details li {
   position: relative;
 }
-/* line 134, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 149, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card-back .gift-card-details li .gift-card-textarea-msg {
   position: absolute;
   right: 30px;
@@ -2734,15 +2746,79 @@ table th, table td {
   line-height: 19.5px;
   color: #e6e7e7;
 }
-/* line 145, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 160, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card-back textarea {
   resize: none;
   height: 170px;
   min-height: 1px;
 }
-/* line 152, ../../dev/sass/partials/modules/_checkout-shipping.scss */
+/* line 167, ../../dev/sass/partials/modules/_checkout-shipping.scss */
 .add-gift-card-wrapper .gift-card-back .btn {
   margin-top: 40px;
+}
+
+/* line 7, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .payment-details h2 {
+  margin-bottom: 10px;
+}
+/* line 16, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .payment-details .payment-type > ul > li.card-labels {
+  border: 1px solid #aaa9a9;
+  height: 44px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#checkout-payment .payment-details .payment-type > ul > li.card-labels:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 25, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .payment-details .payment-type > ul > li.card-labels .name {
+  padding-left: 10px;
+}
+/* line 30, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .payment-details .payment-type > ul > li.card-labels .card-inputs {
+  float: right;
+  margin: -4px 0 0 0;
+}
+/* line 35, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .payment-details .payment-type > ul > li.card-labels .card-inputs input {
+  background: #e6e7e7;
+  border: 1px solid #aaa9a9;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+  width: 60px;
+  margin-left: 5px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 48, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .payment-details .payment-type > ul > li.card-labels .card-inputs input.invalid-character {
+  background: #c97386;
+}
+/* line 58, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .payment-details li {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#checkout-payment .payment-details li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 62, ../../dev/sass/partials/modules/_checkout-payment.scss */
+#checkout-payment .payment-details li .expiry-holder {
+  width: 33.33%;
+  float: left;
 }
 
 /* line 2, ../../dev/sass/partials/modules/_checkout-order-summary.scss */

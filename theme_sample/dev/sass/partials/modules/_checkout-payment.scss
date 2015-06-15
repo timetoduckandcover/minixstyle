@@ -1,0 +1,69 @@
+
+
+#checkout-payment {
+
+	.payment-details {
+
+		h2 {
+
+			margin-bottom: $baseline/2;
+		}
+
+		.payment-type {
+
+			& > ul {
+
+				& > li.card-labels {
+
+					border: 1px solid $col-darkgrey;
+					height: 44px;
+					width: 100%;
+					padding: $baseline/2;
+					margin-bottom: $baseline/2;
+					@include cf;
+
+					.name {
+
+						padding-left: $baseline/2;
+					}
+
+					.card-inputs {
+
+						float: right;
+						margin: -4px 0 0 0;
+
+						input {
+
+							background: $col-lightgrey;
+							border: 1px solid $col-darkgrey;
+							height: 30px;
+							padding: 0;
+							margin: 0;
+							text-align: center;
+							display: inline-block;
+							width: 60px;
+							margin-left: $baseline/4;
+							@include transition(all .1s ease-in-out);
+
+							&.invalid-character {
+
+								background: $col-red;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		li {
+
+			@include cf;
+
+			.expiry-holder {
+
+				width: 33.33%;
+				float: left;
+			}
+		}
+	}
+}

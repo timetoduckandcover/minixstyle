@@ -91,6 +91,10 @@
 										non malesuada. Aenean sodales lacus eu arcu tempus dictum. Aenean sed iaculis mauris. Nulla ut odio interdum, placerat erat sit amet, blandit lacus. Praesent viverra magna leo, sed rutrum leo dictum eget. Cras aliquet diam id velit dictum lobortis. Nunc a auctor lectus, id semper magna. Etiam auctor pellentellis.
 									</span>
 								</li>
+								<li>
+									<a href="javascript:;" class="upper underline edit-gift-card">Edit</a>
+									<a href="javascript:;" class="upper underline remove-gift-card">Remove</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -98,7 +102,7 @@
 						<h2 class="epsilon">Shipping options</h2>
 						<ul>
 							<li>
-								<input type="radio" selected id="shipping-options-1" name="shipping-options" />
+								<input type="radio" checked="checked" id="shipping-options-1" name="shipping-options" />
 								<label for="shipping-options-1">FREE SHIPPING - $0.00 - expected delivery 5-7 business days</label>
 							</li>
 							<li>
