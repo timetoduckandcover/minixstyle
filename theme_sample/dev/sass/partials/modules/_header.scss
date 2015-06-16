@@ -11,6 +11,12 @@ $header-height: $baseline*3;
 	color: $col-white;
 	text-align: center;
 	padding: 4px $baseline;
+	display: none;
+
+	&.active {
+
+		display: block;
+	}
 
 	span {
 

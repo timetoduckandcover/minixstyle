@@ -1800,11 +1800,11 @@ function getScreenHeight() {
 
 	if ($(window).width() >= 767) { 
 
-		$('.home-promo-2, .home-promo-3, home-promo-4').css({"height" : screenHeight});
+		$('.home-promo-2, .home-promo-3, .home-slider-inner').css({"height" : screenHeight});
 
 	} else {
 
-		$('.home-promo-2, .home-promo-3, .home-promo-4').css("height", "370px");
+		$('.home-promo-2, .home-promo-3, .home-slider-inner').css("height", "370px");
 	}
 
 	// Lookbooks slides height
@@ -1818,6 +1818,26 @@ window.onresize = function() {
 
 	getScreenHeight();
 };
+
+// Header promo banner 
+setTimeout(function() {
+
+	$('.header-promo-banner').slideDown().addClass('active');
+
+	// Set top value of sub-nav based on whether promo message is visible or not
+	if($('.header-promo-banner').hasClass('active')) {
+
+		$('.sub-nav').css({"top" : "89px"});
+	} else {
+
+		$('.sub-nav').css({"top" : "59px"});
+	}
+}, 2000);
+
+
+
+
+
 
 
 // Fitvids

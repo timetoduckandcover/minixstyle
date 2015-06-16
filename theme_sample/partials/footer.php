@@ -50,6 +50,10 @@
         </div>
 	</footer>
 
+    <div class="get-current-promo">
+        
+    </div>
+
 	<script src="assets/js/main.js"></script>
 	<script src="//localhost:35729/livereload.js"></script>
 

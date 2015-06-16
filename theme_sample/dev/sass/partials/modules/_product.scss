@@ -18,10 +18,10 @@
 	}
 
 	// Main Product Image
-	.product-main-image {
+	// .product-main-image {
 
 
-	}
+	// }
 
 	// Details
 	.product-details {
@@ -101,6 +101,7 @@
 						&.sold-out {
 
 							background: $col-lightgrey;
+							position: relative;
 
 							@include breakpoint($tablet) {
 
