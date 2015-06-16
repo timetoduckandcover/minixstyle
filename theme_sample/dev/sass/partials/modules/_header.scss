@@ -1,14 +1,36 @@
+
 // ============================================================
 // HEADER 
 // ============================================================
 
 $header-height: $baseline*3;
 
+.header-promo-banner {
+
+	background: $col-black;
+	color: $col-white;
+	text-align: center;
+	padding: 4px $baseline;
+
+	span {
+
+		text-transform: uppercase;
+		padding-right: $baseline/2;
+		@include font(13);
+	}
+
+	a {
+
+		color: $col-white;
+	}
+}
+
 .global-header {
 
 	z-index: 99999;
 	background: $col-white;
 	border-bottom: 1px solid $col-black;
+	position: relative;
 
 	@include breakpoint($tablet) {
 
@@ -79,6 +101,7 @@ $header-height: $baseline*3;
 					top: 59px;
 					left: 0;
 					right: 0;
+					z-index: 999999;
 
 					.header-left-push-subnav {
 
@@ -260,7 +283,7 @@ $header-height: $baseline*3;
 
 	display: none;
 	background: $col-white;
-	z-index: 2;
+	z-index: 999999;
 	padding: $baseline;
 	position: absolute;
 	left: 0;

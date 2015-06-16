@@ -13,25 +13,36 @@ $flexslider-padding: $baseline*2;
 	.slides {
 
 		@include cf;
+
+		li {
+
+			@include cf;
+		}
+	}
+
+	.slide-full {
+
+		width: 100%;
+	}
+
+	.slide-half {
+
+		width: 50%;
+		float: left;
 	}
 
 	.flex-direction-nav {
 
-		//@include centre(y);
+		@include centre(y);
 		z-index: 5555;
 		width: 100%;
-		//margin-top: -$flexslider-padding;
+		height: 50px;
 		display: none;
 		@include cf;
 
 		@include breakpoint($tablet) {
 
 			display: block;
-		}
-
-		li {
-
-
 		}
 
 		a {
@@ -42,7 +53,7 @@ $flexslider-padding: $baseline*2;
 		.flex-nav-prev,
 		.flex-nav-next {
 
-			@include centre(y);
+			//@include centre(y);
 			height: 50px;
 			@include transition(all .2s ease-in-out);
 			text-indent: -999999px;
@@ -65,23 +76,23 @@ $flexslider-padding: $baseline*2;
 
 		.flex-nav-prev {
 
-			left: 4px;
+			margin-left: 8px;
 			float: left;
 
 			&:hover {
 
-				left: 10px;
+				margin-left: 14px;
 			}
 		}
 
 		.flex-nav-next {
 	
-			right: 4px;
+			margin-right: 8px;
 			float: right;
 
 			&:hover {
 
-				right: 10px;
+				margin-right: 14px;
 			}
 
 			a {

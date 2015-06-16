@@ -1800,15 +1800,15 @@ function getScreenHeight() {
 
 	if ($(window).width() >= 767) { 
 
-		$('.home-promo-2, .home-promo-3').css({"height" : screenHeight});
+		$('.home-promo-2, .home-promo-3, home-promo-4').css({"height" : screenHeight});
 
 	} else {
 
-		$('.home-promo-2, .home-promo-3').css("height", "370px");
+		$('.home-promo-2, .home-promo-3, .home-promo-4').css("height", "370px");
 	}
 
-	// Lookbooks height
-	$('#lookbooks li').css({"height" : screenHeight});
+	// Lookbooks slides height
+	$('#lookbooks li div').css({"height" : screenHeight});
 
 };
 
@@ -1820,9 +1820,10 @@ window.onresize = function() {
 };
 
 
-
 // Fitvids
 //$('.video-wrapper').fitVids();
+
+
 
 
 
@@ -1847,6 +1848,54 @@ window.onresize = function() {
 // 	    }
 // 	});
 // }
+
+// Home page popups
+
+	var rlpWrapper       = $('.rlp-wrapper'),
+		loginSwitch      = $('.rlp-switch-to-login'),
+		registerSwitch   = $('.rlp-switch-to-register'),
+		loginSection     = $('.rlp-login-section'),
+		registerSection  = $('.rlp-register-section'),
+		closePopup       = $('.rlp-close'),
+		signInLinkHeader = $('.sign-in-link');
+
+
+	// Fade in popup - needs cookie here!
+	setTimeout(function() {
+
+		rlpWrapper.fadeIn();
+	}, 5000);
+
+	// Switch between login & register forms
+	loginSwitch.on("click", function() {
+
+		registerSection.hide();
+		loginSection.show();
+	});
+
+	registerSwitch.on("click", function() {
+
+		registerSection.show();
+		loginSection.hide();
+	});
+
+	// Hide popup on X click
+	closePopup.on("click", function() {
+
+		rlpWrapper.hide();
+	});
+
+	// Sign in show popup
+	signInLinkHeader.on("click", function() {
+
+		rlpWrapper.show();
+		registerSection.hide();
+		loginSection.show();
+	});
+
+
+
+	
 
 	// Product page tabs
 	$('.product-tab-header').on("click", function() {

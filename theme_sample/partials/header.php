@@ -3,6 +3,15 @@
 <!--[if lt IE 9]>
     <p class="browsehappy">Please update your browser</p>
 <![endif]-->
+
+<!-- If user is not logged in, show promo banner -->
+<div class="header-promo-banner">
+	<span>Enjoy 20% off your first order</span>
+	<span>Use code: FIRST20</span>
+	<a href="javascript:;" class="underline">details</a>
+</div>
+<!-- -->
+
 <header class="global-header">
    <div class="wrapper">
 
@@ -77,7 +86,9 @@
 	   						<a href="/">Get $20</a>
 	   					</li>
 	   					<li>
-	   						<a href="account.php">Sign in</a>
+	   						<a href="javascript:;" class="sign-in-link">Sign in</a>
+	   						<!-- If signed in, show the below and hide the above -->
+	   						<!-- <a href="account.php">Account</a> -->
 	   					</li>
 	   					<li class="cart-link">
 	   						<a href="/cart.php" class="no-underline"><i class="header-cart-count">0</i></a>
@@ -98,7 +109,9 @@
 				</a>
 				<ul class="burger-nav mobile">
 					<li>
-						<a href="account.php">Sign In</a>
+						<a href="javascript:;" class="sign-in-link">Sign in</a>
+   						<!-- If signed in, show the below and hide the above -->
+   						<!-- <a href="account.php">Account</a> -->
 					</li>
 					<li>
 						<a href="javascript:;" class="has-mobile-sub-nav">Shop</a>

@@ -55,10 +55,23 @@
 
 			height: 370px;
 
-			// .caption {
+			.caption {
 	
-			// 	right: 5%;
-			// }
+				right: 15%;
+				position: absolute;
+				bottom: 15%;
+			}
+		}
+
+		&.home-promo-4 {
+
+			height: 370px;
+
+			.caption {
+	
+				@include centre(x);
+				bottom: 15%;
+			}
 		}
 	}
 }

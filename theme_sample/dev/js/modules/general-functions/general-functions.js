@@ -70,15 +70,15 @@ function getScreenHeight() {
 
 	if ($(window).width() >= 767) { 
 
-		$('.home-promo-2, .home-promo-3').css({"height" : screenHeight});
+		$('.home-promo-2, .home-promo-3, home-promo-4').css({"height" : screenHeight});
 
 	} else {
 
-		$('.home-promo-2, .home-promo-3').css("height", "370px");
+		$('.home-promo-2, .home-promo-3, .home-promo-4').css("height", "370px");
 	}
 
-	// Lookbooks height
-	$('#lookbooks li').css({"height" : screenHeight});
+	// Lookbooks slides height
+	$('#lookbooks li div').css({"height" : screenHeight});
 
 };
 
@@ -90,7 +90,8 @@ window.onresize = function() {
 };
 
 
-
 // Fitvids
 //$('.video-wrapper').fitVids();
+
+
 

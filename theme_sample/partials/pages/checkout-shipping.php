@@ -82,4 +82,4 @@
 	</div>
 </div>
 
-<?php include('partials/pages/page-partials/gift-card-overlay.php');?>
+<?php include('partials/pages/page-partials/gift-card-popup.php');?>
