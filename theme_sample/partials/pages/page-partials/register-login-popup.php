@@ -1,7 +1,7 @@
 
-<div class="rlp-wrapper">
+<div class="rlp-wrapper black-popup">
 	<div class="rlp">
-		<a href="javascript:;" class="rlp-close">X</a>
+		<a href="javascript:;" class="black-popup-close">X</a>
 		<div class="rlp-register-section">
 			<h2>Join Mini X</h2>
 			<span class="block">Shop the coolest kids fashion in the world with up to 40% off retail prices.</span>

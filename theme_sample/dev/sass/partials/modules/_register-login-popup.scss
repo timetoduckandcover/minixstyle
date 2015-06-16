@@ -2,14 +2,6 @@
 
 .rlp-wrapper {
 
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 9999999;
-	background: rgba(0,0,0,.65);
-	text-align: center;
 	display: none;
 
 	.rlp {
@@ -19,13 +11,6 @@
 		max-width: 450px;
 		background: $col-white;
 		padding: $baseline*1.5 $baseline*2.5;
-
-		.rlp-close {
-
-			position: absolute;
-			top: $baseline*1.5;
-			right: $baseline*2.5;
-		}
 
 		.rlp-login-section {
 
@@ -62,7 +47,7 @@
 					border: 1px solid $col-black;
 					width: 100%;
 					line-height: 42px;
-					@include transition(all .3s ease-in-out);
+					@include transition(all .2s ease-in-out);
 					@include breakpoint($mobile) {
 
 						width: 48%;

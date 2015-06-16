@@ -83,7 +83,7 @@
 	   						<a href="page-with-sidebar.php">Help</a>
 	   					</li>
 	   					<li>
-	   						<a href="/">Get $20</a>
+	   						<a href="javascript:;" class="raf-link">Get $20</a>
 	   					</li>
 	   					<li>
 	   						<a href="javascript:;" class="sign-in-link">Sign in</a>

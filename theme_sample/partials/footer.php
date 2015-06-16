@@ -50,9 +50,7 @@
         </div>
 	</footer>
 
-    <div class="get-current-promo">
-        
-    </div>
+    <?php include('partials/pages/page-partials/refer-a-friend-popup.php');?>
 
 	<script src="assets/js/main.js"></script>
 	<script src="//localhost:35729/livereload.js"></script>

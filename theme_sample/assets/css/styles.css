@@ -3179,17 +3179,9 @@ table th, table td {
 
 /* line 3, ../../dev/sass/partials/modules/_register-login-popup.scss */
 .rlp-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999999;
-  background: rgba(0, 0, 0, 0.65);
-  text-align: center;
   display: none;
 }
-/* line 15, ../../dev/sass/partials/modules/_register-login-popup.scss */
+/* line 7, ../../dev/sass/partials/modules/_register-login-popup.scss */
 .rlp-wrapper .rlp {
   position: absolute;
   top: 50%;
@@ -3204,25 +3196,19 @@ table th, table td {
   background: white;
   padding: 30px 50px;
 }
-/* line 23, ../../dev/sass/partials/modules/_register-login-popup.scss */
-.rlp-wrapper .rlp .rlp-close {
-  position: absolute;
-  top: 30px;
-  right: 50px;
-}
-/* line 30, ../../dev/sass/partials/modules/_register-login-popup.scss */
+/* line 15, ../../dev/sass/partials/modules/_register-login-popup.scss */
 .rlp-wrapper .rlp .rlp-login-section {
   display: none;
 }
-/* line 35, ../../dev/sass/partials/modules/_register-login-popup.scss */
+/* line 20, ../../dev/sass/partials/modules/_register-login-popup.scss */
 .rlp-wrapper .rlp h2 {
   margin-bottom: 10px;
 }
-/* line 40, ../../dev/sass/partials/modules/_register-login-popup.scss */
+/* line 25, ../../dev/sass/partials/modules/_register-login-popup.scss */
 .rlp-wrapper .rlp form {
   margin-top: 20px;
 }
-/* line 45, ../../dev/sass/partials/modules/_register-login-popup.scss */
+/* line 30, ../../dev/sass/partials/modules/_register-login-popup.scss */
 .rlp-wrapper .rlp form input[type="text"], .rlp-wrapper .rlp form select,
 .rlp-wrapper .rlp form textarea,
 .rlp-wrapper .rlp form input[type="password"] {
@@ -3230,7 +3216,7 @@ table th, table td {
   border: 1px solid #e6e7e7;
   text-align: center;
 }
-/* line 52, ../../dev/sass/partials/modules/_register-login-popup.scss */
+/* line 37, ../../dev/sass/partials/modules/_register-login-popup.scss */
 .rlp-wrapper .rlp form .social-login {
   *zoom: 1;
   text-align: center;
@@ -3242,50 +3228,102 @@ table th, table td {
   display: table;
   clear: both;
 }
-/* line 58, ../../dev/sass/partials/modules/_register-login-popup.scss */
+/* line 43, ../../dev/sass/partials/modules/_register-login-popup.scss */
 .rlp-wrapper .rlp form .social-login a {
   display: block;
   height: 44px;
   border: 1px solid #222222;
   width: 100%;
   line-height: 42px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 @media (min-width: 450px) {
-  /* line 58, ../../dev/sass/partials/modules/_register-login-popup.scss */
+  /* line 43, ../../dev/sass/partials/modules/_register-login-popup.scss */
   .rlp-wrapper .rlp form .social-login a {
     width: 48%;
   }
 }
-/* line 71, ../../dev/sass/partials/modules/_register-login-popup.scss */
+/* line 56, ../../dev/sass/partials/modules/_register-login-popup.scss */
 .rlp-wrapper .rlp form .social-login a:hover {
   background: #222222;
   color: white;
 }
-/* line 77, ../../dev/sass/partials/modules/_register-login-popup.scss */
+/* line 62, ../../dev/sass/partials/modules/_register-login-popup.scss */
 .rlp-wrapper .rlp form .social-login a.fb {
   margin-bottom: 10px;
 }
 @media (min-width: 450px) {
-  /* line 77, ../../dev/sass/partials/modules/_register-login-popup.scss */
+  /* line 62, ../../dev/sass/partials/modules/_register-login-popup.scss */
   .rlp-wrapper .rlp form .social-login a.fb {
     float: left;
     margin-bottom: 0;
   }
 }
 @media (min-width: 450px) {
-  /* line 88, ../../dev/sass/partials/modules/_register-login-popup.scss */
+  /* line 73, ../../dev/sass/partials/modules/_register-login-popup.scss */
   .rlp-wrapper .rlp form .social-login a.google {
     float: right;
   }
 }
-/* line 98, ../../dev/sass/partials/modules/_register-login-popup.scss */
+/* line 83, ../../dev/sass/partials/modules/_register-login-popup.scss */
 .rlp-wrapper .rlp form .or {
   margin: 10px 0 20px 0;
   text-transform: uppercase;
+}
+
+/* line 3, ../../dev/sass/partials/modules/_current-promo-popup.scss */
+.gcp-wrapper {
+  display: none;
+}
+/* line 7, ../../dev/sass/partials/modules/_current-promo-popup.scss */
+.gcp-wrapper .gcp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  padding: 30px 50px;
+  width: 100%;
+  background: white;
+}
+/* line 15, ../../dev/sass/partials/modules/_current-promo-popup.scss */
+.gcp-wrapper .gcp form {
+  margin-top: 10px;
+}
+/* line 19, ../../dev/sass/partials/modules/_current-promo-popup.scss */
+.gcp-wrapper .gcp form input[type="email"] {
+  text-align: center;
+  background: #e6e7e7;
+  border: 1px solid #e6e7e7;
+}
+/* line 26, ../../dev/sass/partials/modules/_current-promo-popup.scss */
+.gcp-wrapper .gcp form .btn {
+  width: 100%;
+}
+
+/* line 3, ../../dev/sass/partials/modules/_popup-general.scss */
+.black-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  background: rgba(0, 0, 0, 0.65);
+  text-align: center;
+}
+/* line 14, ../../dev/sass/partials/modules/_popup-general.scss */
+.black-popup .black-popup-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
 }
 
 /* line 6, ../../dev/sass/misc/_helpers.scss */
