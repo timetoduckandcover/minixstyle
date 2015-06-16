@@ -12,9 +12,14 @@
 		width: 100%;
 		background: $col-white;
 
+		h2 {
+
+			margin-bottom: $baseline/2;
+		}
+
 		form {
 
-			margin-top: $baseline/2;
+			margin-top: $baseline;
 
 			input[type="email"] {
 

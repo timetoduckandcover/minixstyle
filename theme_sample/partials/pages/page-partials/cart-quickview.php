@@ -36,6 +36,6 @@
 	</div>
 	<div class="cart-footer">
 		<span>Subtotal $74</span>
-		<a href="/checkout" class="btn">Checkout</a>
+		<a href="checkout.php" class="btn">Checkout</a>
 	</div>
 </div>

@@ -49,8 +49,10 @@
 							<div class="col-xs-12 col-md-1 cart-pull-right">
 								<span>$40</span>
 							</div>
-							<div class="col-xs-12 col-md-3 cart-pull-right">
-								<span>- 1 +</span>
+							<div class="col-xs-12 col-md-3 incrementors cart-pull-right">
+								<a href="javascript:;" class="dec">-</a>
+								<input type="text" value="1" class="quantity-number"/>
+								<a href="javascript:;" class="inc">+</a>
 							</div>
 							<div class="col-xs-12 col-md-2 cart-pull-right">
 								<span>$40</span>
@@ -70,8 +72,10 @@
 							<div class="col-xs-12 col-md-1 cart-pull-right">
 								<span>$40</span>
 							</div>
-							<div class="col-xs-12 col-md-3 cart-pull-right">
-								<span>- 1 +</span>
+							<div class="col-xs-12 col-md-3 incrementors cart-pull-right">
+								<a href="javascript:;" class="dec">-</a>
+								<input type="text" value="1" class="quantity-number"/>
+								<a href="javascript:;" class="inc">+</a>
 							</div>
 							<div class="col-xs-12 col-md-2 cart-pull-right">
 								<span>$40</span>
