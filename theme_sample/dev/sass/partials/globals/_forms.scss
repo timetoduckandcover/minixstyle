@@ -86,7 +86,12 @@ input[type="submit"] {
 
 	&.large {
 
-		padding: $baseline/2 $baseline*3 8px $baseline*3;
+		padding: $baseline/2 $baseline 8px $baseline;
+
+		@include breakpoint($mobile) {
+
+			padding: $baseline/2 $baseline*3 8px $baseline*3;
+		}
 	}
 
 	&:hover {

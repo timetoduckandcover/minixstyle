@@ -84,13 +84,18 @@
 
 					a {
 
-						padding: $baseline/2;
+						padding: $baseline/2 4px;
 						border: 1px solid $col-black;
 						display: block;
 						text-align: center;
 						background: $col-white;
 						color: $col-black;
 						@include transition(all .1s ease-in-out);
+
+						@include breakpoint($mobile) {
+
+							padding: $baseline/2;
+						}
 
 						&.active {
 
