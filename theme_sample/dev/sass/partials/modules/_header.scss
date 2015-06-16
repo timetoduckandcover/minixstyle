@@ -12,10 +12,6 @@ $header-height: $baseline*3;
 
 	@include breakpoint($tablet) {
 
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
 		height: $header-height;
 	}
 
@@ -84,10 +80,10 @@ $header-height: $baseline*3;
 					left: 0;
 					right: 0;
 
-					// .header-left-push {
+					.header-left-push-subnav {
 
-					// 	padding: $baseline $baseline $baseline*2 $burger-push;
-					// }
+						padding-left: $baseline*3;
+					}
 
 					.sub-nav-list {
 
@@ -149,7 +145,7 @@ $header-height: $baseline*3;
 	// Right nav
 	.nav-right {
 
-		padding-right: $baseline*3;
+		padding-right: $baseline*2.5;
 		position: absolute;
 		right: $baseline;
 		top: 0;
@@ -192,13 +188,24 @@ $header-height: $baseline*3;
 			border: 0 !important;
 		}
 
-		a {
+		& > a {
 
 			background-image: url(../img/theme/cart-icon.png);
 			background-repeat: no-repeat;
 			width: 26px;
 			height: 46px;
 			background-size: 26px 26px;
+			display: block;
+		}
+
+		.header-cart-count {
+
+			position: absolute;
+			top: 6px;
+			left: 9px;
+			color: $col-white;
+			font-family: $gibsonlight;
+			text-align: center !important;
 		}
 	}
 
@@ -245,16 +252,7 @@ $header-height: $baseline*3;
 		left: 0;
 		float: none;
 		padding: 0;
-
-		&.desktop {
-
-			top: 0;
-		}
-
-		&.mobile {
-
-			top: 2px;
-		}
+		top: 0;
 	}
 }
 

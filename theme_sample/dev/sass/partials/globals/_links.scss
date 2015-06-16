@@ -22,6 +22,14 @@ a {
 		text-transform: uppercase;
 	}
 
+	&.no-underline {
+
+		&:hover {
+
+			border-bottom: 2px solid transparent !important;	
+		}
+	}
+
 	// &:link {
 
 	// 	text-decoration: none;

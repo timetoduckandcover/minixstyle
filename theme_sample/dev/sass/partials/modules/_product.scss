@@ -194,12 +194,24 @@
 							right: $baseline;
 							top: $baseline/2;
 						}
+
+						&.active {
+
+							color: $col-lime;
+
+							&:after {
+
+								content: '-';
+							}
+						}
 					}
 
 					.product-tab-content {
 
-						padding: $baseline/2 $baseline;
+						padding: $baseline $baseline $baseline/2 $baseline;
 						display: none;
+						border-top: 1px solid $col-black;
+						@include font(18);
 					}
 				}
 			}

@@ -59,7 +59,7 @@
 	   						<a href="about.php">About</a>
 	   					</li>
 	   					<li>
-	   						<a href="lookbook.php">Lookbook</a>
+	   						<a href="lookbooks.php">Lookbooks</a>
 	   					</li>
 	   				</ul>
 	   			</nav>
@@ -80,7 +80,7 @@
 	   						<a href="account.php">Sign in</a>
 	   					</li>
 	   					<li class="cart-link">
-	   						<a href="/cart.php"></a>
+	   						<a href="/cart.php" class="no-underline"><i class="header-cart-count">0</i></a>
 	   						<?php include('partials/pages/page-partials/cart-quickview.php');?>
 	   					</li>
 	   				</ul>
@@ -142,8 +142,8 @@
    			<a href="/" class="logo">
    				<img src="assets/img/theme/logo.png" alt="Mini X Logo" class="img-full" />
    			</a>
-   			<div class="cart-link sprite">
-				<a href="/cart.php"></a>
+   			<div class="cart-link">
+				<a href="/cart.php" class="no-underline"><i class="header-cart-count">0</i></a>
 				<?php include('partials/pages/page-partials/cart-quickview.php');?>
 			</div>
    		</div>

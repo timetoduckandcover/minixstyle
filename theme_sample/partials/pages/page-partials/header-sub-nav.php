@@ -1,6 +1,6 @@
 <div class="sub-nav">
-	<div class="wrapper">
-		<div class="header-left-push">
+	<div class="wrapper padding">
+		<div class="header-left-push-subnav">
 			<div class="row">
 				<div class="col-xs-12 col-md-3 sub-nav-list">
 					<h3 class="epsilon title">Categories</h3>

@@ -4,7 +4,11 @@ $flexslider-padding: $baseline*2;
 .flexslider {
 
 	position: relative;
-	padding-bottom: $flexslider-padding;
+	
+	&.pd {
+
+		padding-bottom: $flexslider-padding;
+	}
 
 	.slides {
 
@@ -13,15 +17,21 @@ $flexslider-padding: $baseline*2;
 
 	.flex-direction-nav {
 
-		@include centre(y);
+		//@include centre(y);
 		z-index: 5555;
 		width: 100%;
-		margin-top: -$flexslider-padding;
+		//margin-top: -$flexslider-padding;
 		display: none;
+		@include cf;
 
 		@include breakpoint($tablet) {
 
 			display: block;
+		}
+
+		li {
+
+
 		}
 
 		a {
@@ -33,6 +43,7 @@ $flexslider-padding: $baseline*2;
 		.flex-nav-next {
 
 			@include centre(y);
+			height: 50px;
 			@include transition(all .2s ease-in-out);
 			text-indent: -999999px;
 
@@ -55,6 +66,7 @@ $flexslider-padding: $baseline*2;
 		.flex-nav-prev {
 
 			left: 4px;
+			float: left;
 
 			&:hover {
 
@@ -65,6 +77,7 @@ $flexslider-padding: $baseline*2;
 		.flex-nav-next {
 	
 			right: 4px;
+			float: right;
 
 			&:hover {
 

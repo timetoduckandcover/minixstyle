@@ -1,0 +1,22 @@
+
+#lookbooks {
+
+	li {
+
+		position: relative;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-position: fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+
+		.lookbook-cta {
+
+			@include centre(x);
+			bottom: 20%;
+			z-index: 999999;
+		}
+	}
+}

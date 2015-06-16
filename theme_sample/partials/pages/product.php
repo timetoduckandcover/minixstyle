@@ -32,7 +32,7 @@
 
 					<!-- Main product image -->
 					<div class="col-xs-12 col-md-6 product-main-image">
-						<div class="flexslider">
+						<div class="flexslider pd">
 							<ul class="slides">
 								<li>
 									<img src="assets/img/products/koolabah.jpeg" alt="Product Image" class="img-full" />

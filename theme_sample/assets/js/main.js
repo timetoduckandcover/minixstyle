@@ -1790,17 +1790,12 @@ $('.has-mobile-sub-nav').on("click", function() {
 	$(this).parent().find('.mobile-sub-nav').slideToggle();
 });
 
-
-// Fitvids
-//$('.video-wrapper').fitVids();
-
-
-
-var screenHeight = $(window).height() - 60;
+// Get screen height for home & lookbook slides
+var screenHeight = $(window).height() - 60; //subtract height of header, remove if we add a fixed header
 
 function getScreenHeight() {
-
-	//subtract height of header, remove if we add a fixed header
+	
+	// Home promos height
 	$('.home-promo-1').css({"height" : screenHeight});
 
 	if ($(window).width() >= 767) { 
@@ -1811,6 +1806,10 @@ function getScreenHeight() {
 
 		$('.home-promo-2, .home-promo-3').css("height", "370px");
 	}
+
+	// Lookbooks height
+	$('#lookbooks li').css({"height" : screenHeight});
+
 };
 
 getScreenHeight();
@@ -1819,6 +1818,13 @@ window.onresize = function() {
 
 	getScreenHeight();
 };
+
+
+
+// Fitvids
+//$('.video-wrapper').fitVids();
+
+
 
 
 // If home page, remove line under header
